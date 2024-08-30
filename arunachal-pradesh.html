@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Famous Foods of Arunachal Pradesh</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    #state-content {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section-content img {
+      width: 100%;
+      height: 250px; /* Increased height for less cropping */
+      object-fit: cover; /* Keeps the aspect ratio and crops sides as necessary */
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: 3px solid #4CAF50; /* Added border */
+    }
+
+    h2 {
+      color: #4CAF50;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h3, h4 {
+      color: #555;
+    }
+
+    ul {
+      list-style-type: square;
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    ol {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    .recipe-section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .recipe-title {
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .recipe-content {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .recipe-content a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .recipe-content a:hover {
+      text-decoration: underline;
+    }
+
+    .recipe-content ul, .recipe-content ol {
+      margin-bottom: 10px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Styles for the popup */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none; /* Hidden by default */
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .popup-content {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .popup-content iframe {
+      width: 100%;
+      height: 400px;
+    }
+
+    .close-popup {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    /* Styles for the language toggle buttons */
+    .language-toggle {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .language-toggle button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .language-toggle button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-container">
+      <h1 class="nav-logo">Famous Foods of India</h1>
+      <ul class="nav-links">
+        <li><a href="../index.html#intro">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#states">Explore States</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="state-content">
+    <div class="section-content">
+      <h2>Famous Foods of Arunachal Pradesh</h2>
+      
+      <!-- Thukpa Recipe -->
+      <div class="recipe-section">
+        <h3>Thukpa</h3>
+        <img src="images/pexels-karolina-grabowska-4210849.jpg" alt="Thukpa">
+        <div class="recipe-content">
+          <h4 class="recipe-title">Thukpa Recipe (English):</h4>
+          <ul>
+            <li><strong>Ingredients:</strong>
+              <ul>
+                <li>200g noodles</li>
+                <li>1 onion, chopped</li>
+                <li>1 carrot, chopped</li>
+                <li>1/2 cup cabbage, shredded</li>
+                <li>200g chicken, sliced</li>
+                <li>1 tablespoon soy sauce</li>
+                <li>1 teaspoon ginger-garlic paste</li>
+                <li>Salt and pepper to taste</li>
+              </ul>
+            </li>
+            <li><strong>Instructions:</strong>
+              <ol>
+                <li>Boil the noodles as per the instructions on the package. Drain and set aside.</li>
+                <li>Heat oil in a pan and sauté the onions, ginger-garlic paste, and chicken until the chicken is cooked.</li>
+                <li>Add the carrots and cabbage and cook for a few minutes.</li>
+                <li>Pour in 4 cups of water, add soy sauce, salt, and pepper, and bring to a boil.</li>
+                <li>Add the noodles to the broth and let it simmer for 5 minutes.</li>
+                <li>Serve hot, garnished with fresh herbs.</li>
+              </ol>
+            </li>
+          </ul>
+          <!-- Trigger for the popup video -->
+          <button class="open-popup" data-video="https://www.youtube.com/embed/z0uojML4dpc">Watch Recipe Video</button>
+        </div>
+      </div>
+
+      <!-- Bamboo Shoot Recipe -->
+      <div class="recipe-section">
+        <h3>Bamboo Shoot</h3>
+        <img src="images/pexels-eaksit-sangdee-1672578-15797950.jpg" alt="Bamboo Shoot">
+        <div class="recipe-content">
+          <h4 class="recipe-title">Bamboo Shoot Recipe (English):</h4>
+          <ul>
+            <li><strong>Ingredients:</strong>
+              <ul>
+                <li>200g bamboo shoots, sliced</li>
+                <li>2 tablespoons mustard oil</li>
+                <li>1 onion, chopped</li>
+                <li>1 teaspoon turmeric powder</li>
+                <li>1 teaspoon red chili powder</li>
+                <li>Salt to taste</li>
+              </ul>
+            </li>
+            <li><strong>Instructions:</strong>
+              <ol>
+                <li>Heat mustard oil in a pan and sauté the onions until they turn golden brown.</li>
+                <li>Add the bamboo shoots and cook for 5 minutes.</li>
+                <li>Sprinkle turmeric powder, red chili powder, and salt. Mix well.</li>
+                <li>Cover the pan and let it simmer for 10 minutes or until the bamboo shoots are tender.</li>
+                <li>Serve hot with steamed rice.</li>
+              </ol>
+            </li>
+          </ul>
+          <!-- Trigger for the popup video -->
+          <button class="open-popup" data-video="https://www.youtube.com/embed/fMp2DsofxHw">Watch Recipe Video</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup overlay for video -->
+  <div class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <iframe src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Famous Foods of India</p>
+</footer>
+
+  <script>
+    // JavaScript to handle the popup
+    document.addEventListener('DOMContentLoaded', function () {
+      const popupOverlay = document.querySelector('.popup-overlay');
+      const popupIframe = popupOverlay.querySelector('iframe');
+      const closePopupButton = document.querySelector('.close-popup');
+      const openPopupButtons = document.querySelectorAll('.open-popup');
+
+      openPopupButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const videoUrl = this.dataset.video;
+          popupIframe.src = videoUrl;
+          popupOverlay.style.display = 'flex';
+        });
+      });
+
+      closePopupButton.addEventListener('click', function () {
+        popupOverlay.style.display = 'none';
+        popupIframe.src = ''; // Stop video playback
+      });
+
+      popupOverlay.addEventListener('click', function (e) {
+        if (e.target === this) {
+          popupOverlay.style.display = 'none';
+          popupIframe.src = ''; // Stop video playback
+        }
+      });
+    });
+  </script>
+</body>
+</html>

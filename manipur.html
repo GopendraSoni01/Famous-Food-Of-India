@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Manipur</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #388E3C;
+        }
+
+        h2 {
+            color: #388E3C;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Styles for the popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Manipur</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Eromba</h3>
+                <img src="images/eromba.jpg" alt="Eromba">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Eromba Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>4-5 green chilies</li>
+                                <li>2 medium-sized potatoes, boiled and mashed</li>
+                                <li>1 small onion, finely chopped</li>
+                                <li>1 tablespoon fermented fish (optional)</li>
+                                <li>1 teaspoon turmeric powder</li>
+                                <li>1 teaspoon ginger-garlic paste</li>
+                                <li>2 tablespoons oil</li>
+                                <li>Salt to taste</li>
+                                <li>Coriander leaves for garnish</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan, add onions and ginger-garlic paste. Sauté until onions turn golden brown.</li>
+                                <li>Add green chilies and turmeric powder. Cook for a minute.</li>
+                                <li>Add boiled potatoes and mix well. Cook for a few minutes, adding water as needed to adjust consistency.</li>
+                                <li>Add fermented fish if using, and salt. Cook for another 5 minutes.</li>
+                                <li>Garnish with coriander leaves and serve hot with steamed rice.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/t6pAqXA1O8Q?si=LABJiEb1OtHvCZtS">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Chakhao Kheer</h3>
+                <img src="images/Chakhao Kheer.jpg" alt="Chakhao Kheer">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Chakhao Kheer Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup Chakhao rice (black rice)</li>
+                                <li>2 cups milk</li>
+                                <li>1/2 cup sugar</li>
+                                <li>1/4 cup dried fruits (cashews, almonds, raisins)</li>
+                                <li>1/2 teaspoon cardamom powder</li>
+                                <li>1 tablespoon ghee</li>
+                                <li>Water as needed</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Wash and soak Chakhao rice in water for 30 minutes.</li>
+                                <li>Heat ghee in a pan, add dried fruits, and sauté until golden brown.</li>
+                                <li>Add soaked rice and cook for a few minutes.</li>
+                                <li>Add milk and cook on low heat until the rice is fully cooked and the mixture thickens.</li>
+                                <li>Add sugar and cardamom powder. Mix well and cook for another 5 minutes.</li>
+                                <li>Serve warm or chilled.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/NBsQ-iPR_ZU?si=pXySrPymAuNX_hwu">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="recipe-section">
+                <h3>Singju</h3>
+                <img src="images/gju.webp" alt="Singju">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Singju Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup kangkong (water spinach) or any leafy greens</li>
+                                <li>1 small onion, finely chopped</li>
+                                <li>2-3 green chilies, chopped</li>
+                                <li>1 tablespoon roasted sesame seeds</li>
+                                <li>1 tablespoon fermented bamboo shoots (optional)</li>
+                                <li>1 tablespoon oil</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan, add onions and green chilies. Sauté until onions are translucent.</li>
+                                <li>Add leafy greens and cook until wilted.</li>
+                                <li>Add roasted sesame seeds and fermented bamboo shoots if using.</li>
+                                <li>Mix well and cook for a few more minutes.</li>
+                                <li>Season with salt and serve warm with steamed rice.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/GKG0GuC8CJ0?si=lwlZ5ncgZbyBQtil">Watch Recipe Video</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.open-popup').forEach(button => {
+            button.addEventListener('click', function() {
+                const videoUrl = this.getAttribute('data-video');
+                document.querySelector('.popup-overlay').style.display = 'flex';
+                document.querySelector('.popup-overlay iframe').src = videoUrl;
+            });
+        });
+
+        document.querySelector('.close-popup').addEventListener('click', function() {
+            document.querySelector('.popup-overlay').style.display = 'none';
+            document.querySelector('.popup-overlay iframe').src = '';
+        });
+
+        document.querySelector('.popup-overlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+                document.querySelector('.popup-overlay iframe').src = '';
+            }
+        });
+    </script>
+</body>
+</html>

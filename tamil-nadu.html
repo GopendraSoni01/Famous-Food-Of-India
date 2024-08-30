@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Tamil Nadu</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #E91E63;
+        }
+
+        h2 {
+            color: #E91E63;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Tamil Nadu</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Idli</h3>
+                <img src="images/idli.jpg" alt="Idli">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Idli Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup urad dal (split black gram)</li>
+                                <li>2 cups rice</li>
+                                <li>1/2 teaspoon fenugreek seeds</li>
+                                <li>1 teaspoon salt</li>
+                                <li>Water as needed</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Soak the urad dal and fenugreek seeds in water for 4-6 hours.</li>
+                                <li>Soak the rice in water for 4-6 hours.</li>
+                                <li>Drain and grind the urad dal and fenugreek seeds into a smooth batter.</li>
+                                <li>Grind the rice into a slightly coarse batter.</li>
+                                <li>Mix both batters together, add salt, and let it ferment overnight.</li>
+                                <li>Steam the batter in idli molds for about 10-15 minutes.</li>
+                                <li>Serve hot with coconut chutney and sambar.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/dcMlG1UA-jU?si=6Psrd0xmGHQKVHuo">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Sambar</h3>
+                <img src="images/sambar.jpg" alt="Sambar">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Sambar Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup toor dal (pigeon peas)</li>
+                                <li>1 onion, chopped</li>
+                                <li>1 tomato, chopped</li>
+                                <li>1 cup mixed vegetables (carrots, beans, potatoes)</li>
+                                <li>2 tablespoons sambar powder</li>
+                                <li>1/2 teaspoon mustard seeds</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1 tablespoon oil</li>
+                                <li>Salt to taste</li>
+                                <li>Chopped coriander for garnish</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Cook toor dal in a pressure cooker until soft.</li>
+                                <li>Heat oil in a pan, add mustard seeds, and let them splutter.</li>
+                                <li>Add chopped onions and tomatoes, sauté until soft.</li>
+                                <li>Add mixed vegetables, turmeric powder, sambar powder, and salt. Cook until vegetables are tender.</li>
+                                <li>Add cooked dal and adjust consistency with water if needed. Simmer for a few minutes.</li>
+                                <li>Garnish with chopped coriander and serve with idli or dosa.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/EkJC0GgY5wk?si=8za2T-OWumUbmb9N">Watch Recipe Video</button>
+                </div>
+            </div>
+            <div class="recipe-section">
+                <h3>Chettinad Chicken</h3>
+                <img src="images/chettinad-chicken.jpg" alt="Chettinad Chicken">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Chettinad Chicken Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500g chicken, cut into pieces</li>
+                                <li>2 onions, finely chopped</li>
+                                <li>2 tomatoes, chopped</li>
+                                <li>2 tablespoons ginger-garlic paste</li>
+                                <li>2 tablespoons Chettinad masala (or garam masala)</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1/2 teaspoon red chili powder</li>
+                                <li>3 tablespoons oil</li>
+                                <li>Salt to taste</li>
+                                <li>Fresh coriander for garnish</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan, add chopped onions, and sauté until golden brown.</li>
+                                <li>Add ginger-garlic paste and cook until the raw smell disappears.</li>
+                                <li>Add chopped tomatoes and cook until they soften.</li>
+                                <li>Add chicken pieces, turmeric powder, red chili powder, and salt. Cook until the chicken is browned.</li>
+                                <li>Add Chettinad masala and a little water, cover, and simmer until the chicken is cooked through.</li>
+                                <li>Garnish with fresh coriander and serve with rice or naan.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/zVYa0abkdkE?si=Mj_x4EsYbMQiyqIT">Watch Recipe Video</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="popup-overlay">
+            <div class="popup-content">
+                <span class="close-popup">&times;</span>
+                <div class="video-wrapper">
+                    <iframe src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+            </footer>
+    
+        <script>
+            document.querySelectorAll('.open-popup').forEach(button => {
+                button.addEventListener('click', () => {
+                    const videoUrl = button.getAttribute('data-video');
+                    document.querySelector('.popup-overlay iframe').src = videoUrl;
+                    document.querySelector('.popup-overlay').style.display = 'flex';
+                });
+            });
+    
+            document.querySelector('.close-popup').addEventListener('click', () => {
+                document.querySelector('.popup-overlay').style.display = 'none';
+                document.querySelector('.popup-overlay iframe').src = '';
+            });
+    
+            window.addEventListener('click', (e) => {
+                if (e.target === document.querySelector('.popup-overlay')) {
+                    document.querySelector('.popup-overlay').style.display = 'none';
+                    document.querySelector('.popup-overlay iframe').src = '';
+                }
+            });
+        </script>
+    </body>
+    </html>
+    

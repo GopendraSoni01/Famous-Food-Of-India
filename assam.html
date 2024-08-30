@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Famous Foods of Assam</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    #state-content {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section-content img {
+      width: 100%;
+      height: 250px; /* Increased height for less cropping */
+      object-fit: cover; /* Keeps the aspect ratio and crops sides as necessary */
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #4CAF50;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h3, h4 {
+      color: #555;
+    }
+
+    ul {
+      list-style-type: square;
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    ol {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    .recipe-section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .recipe-title {
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .recipe-content {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .recipe-content a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .recipe-content a:hover {
+      text-decoration: underline;
+    }
+
+    .recipe-content ul, .recipe-content ol {
+      margin-bottom: 10px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Styles for the popup */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none; /* Hidden by default */
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .popup-content {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .popup-content iframe {
+      width: 100%;
+      height: 400px;
+    }
+
+    .close-popup {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    /* Styles for the language toggle buttons */
+    .language-toggle {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .language-toggle button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .language-toggle button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-container">
+      <h1 class="nav-logo">Famous Foods of India</h1>
+      <ul class="nav-links">
+        <li><a href="../index.html#intro">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#states">Explore States</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="state-content">
+    <div class="section-content">
+      <h2>Famous Foods of Assam</h2>
+
+      <!-- Assamese Fish Tenga Recipe -->
+      <div class="recipe-section">
+        <h3>Assamese Fish Tenga</h3>
+        <img src="images/tenga.jpg" alt="Assamese Fish Tenga">
+        <div class="recipe-content">
+          <h4 class="recipe-title">Assamese Fish Tenga Recipe (English):</h4>
+          <ul>
+            <li><strong>Ingredients:</strong>
+              <ul>
+                <li>500g freshwater fish (like Rohu or Catla)</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1 potato, cut into cubes</li>
+                <li>1 teaspoon mustard seeds</li>
+                <li>2 green chilies, slit</li>
+                <li>1 tablespoon lemon juice</li>
+                <li>1 teaspoon turmeric powder</li>
+                <li>2 tablespoons mustard oil</li>
+                <li>Salt to taste</li>
+                <li>Water as needed</li>
+              </ul>
+            </li>
+            <li><strong>Instructions:</strong>
+              <ol>
+                <li>Marinate the fish pieces with turmeric and salt for 10 minutes.</li>
+                <li>Heat mustard oil in a pan and fry the fish pieces until golden brown. Set aside.</li>
+                <li>In the same pan, add mustard seeds and let them splutter. Add chopped tomatoes and cook until soft.</li>
+                <li>Add potato cubes, turmeric powder, and salt. Sauté for a few minutes.</li>
+                <li>Add water and bring it to a boil. Let it simmer until potatoes are cooked.</li>
+                <li>Add fried fish pieces and lemon juice. Simmer for another 5 minutes.</li>
+                <li>Serve hot with steamed rice.</li>
+              </ol>
+            </li>
+          </ul>
+          <!-- Trigger for the popup video -->
+          <button class="open-popup" data-video="https://www.youtube.com/embed/12E7H_wk7r8">Watch Recipe Video</button>
+        </div>
+      </div>
+      
+      <!-- Khar Recipe -->
+      <div class="recipe-section">
+        <h3>Khar</h3>
+        <img src="images/khar.jpg" alt="Khar">
+        <div class="recipe-content">
+          <h4 class="recipe-title">Khar Recipe (English):</h4>
+          <ul>
+            <li><strong>Ingredients:</strong>
+              <ul>
+                <li>1 raw papaya, peeled and chopped</li>
+                <li>1 tablespoon alkali (made from dried banana peel)</li>
+                <li>1 teaspoon mustard oil</li>
+                <li>2 green chilies, slit</li>
+                <li>1 teaspoon turmeric powder</li>
+                <li>Salt to taste</li>
+                <li>Water as needed</li>
+              </ul>
+            </li>
+            <li><strong>Instructions:</strong>
+              <ol>
+                <li>Heat mustard oil in a pot and add green chilies and turmeric powder. Sauté for a minute.</li>
+                <li>Add chopped papaya and stir well. Cook for 5 minutes.</li>
+                <li>Add water and alkali. Bring to a boil, then simmer until the papaya is tender.</li>
+                <li>Adjust salt and cook for another few minutes until the flavors meld together.</li>
+                <li>Serve hot with steamed rice.</li>
+              </ol>
+            </li>
+          </ul>
+          <!-- Trigger for the popup video -->
+          <button class="open-popup" data-video="https://www.youtube.com/embed/K-V_TUiAyA0">Watch Recipe Video</button>
+        </div>
+      </div>
+      
+      <!-- Masor Tenga Recipe -->
+      <div class="recipe-section">
+        <h3>Masor Tenga</h3>
+        <img src="images/mtenga.jpg" alt="Masor Tenga">
+        <div class="recipe-content">
+          <h4 class="recipe-title">Masor Tenga Recipe (English):</h4>
+          <ul>
+            <li><strong>Ingredients:</strong>
+              <ul>
+                <li>500g fish (like Rohu or Catla)</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1 teaspoon mustard seeds</li>
+                <li>2 green chilies, slit</li>
+                <li>1 tablespoon lemon juice</li>
+                <li>1 teaspoon turmeric powder</li>
+                <li>2 tablespoons mustard oil</li>
+                <li>Salt to taste</li>
+                <li>Water as needed</li>
+              </ul>
+            </li>
+            <li><strong>Instructions:</strong>
+              <ol>
+                <li>Marinate the fish pieces with turmeric and salt for 10 minutes.</li>
+                <li>Heat mustard oil in a pan and fry the fish pieces until golden brown. Set aside.</li>
+                <li>In the same pan, add mustard seeds and let them splutter. Add chopped tomatoes and cook until soft.</li>
+                <li>Add turmeric powder, green chilies, and salt. Sauté for a few minutes.</li>
+                <li>Add water and bring it to a boil. Let it simmer for a few minutes.</li>
+                <li>Add fried fish pieces and lemon juice. Simmer for another 5 minutes.</li>
+                <li>Serve hot with steamed rice.</li>
+              </ol>
+            </li>
+          </ul>
+          <!-- Trigger for the popup video -->
+          <button class="open-popup" data-video="https://www.youtube.com/embed/dxVTiOBL6XA">Watch Recipe Video</button>
+        </div>
+      </div>
+       </div>
+
+      
+  </section>
+
+  <!-- Popup for video -->
+  <div class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <iframe src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var popupOverlay = document.querySelector('.popup-overlay');
+      var popupContent = document.querySelector('.popup-content iframe');
+      var closePopupButton = document.querySelector('.close-popup');
+
+      document.querySelectorAll('.open-popup').forEach(function(button) {
+        button.addEventListener('click', function() {
+          var videoUrl = button.getAttribute('data-video');
+          popupContent.setAttribute('src', videoUrl);
+          popupOverlay.style.display = 'flex';
+        });
+      });
+
+      closePopupButton.addEventListener('click', function() {
+        popupOverlay.style.display = 'none';
+        popupContent.setAttribute('src', '');
+      });
+
+      popupOverlay.addEventListener('click', function(e) {
+        if (e.target === popupOverlay) {
+          popupOverlay.style.display = 'none';
+          popupContent.setAttribute('src', '');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

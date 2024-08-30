@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Meghalaya</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #388E3C;
+        }
+
+        h2 {
+            color: #388E3C;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Styles for the popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Meghalaya</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Jadoh</h3>
+                <img src="images/jadoh.jpg" alt="Jadoh">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Jadoh Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>2 cups rice</li>
+                                <li>500 grams pork, cut into pieces</li>
+                                <li>1 large onion, finely chopped</li>
+                                <li>2-3 green chilies, chopped</li>
+                                <li>1 tablespoon ginger-garlic paste</li>
+                                <li>1 teaspoon turmeric powder</li>
+                                <li>1 teaspoon black pepper powder</li>
+                                <li>2 tablespoons oil</li>
+                                <li>Salt to taste</li>
+                                <li>Coriander leaves for garnish</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a large pot and sauté onions until golden brown.</li>
+                                <li>Add ginger-garlic paste and green chilies. Cook for a minute.</li>
+                                <li>Add pork pieces, turmeric powder, black pepper powder, and salt. Cook until the pork is browned.</li>
+                                <li>Add rice and mix well. Pour in enough water to cover the rice and pork.</li>
+                                <li>Bring to a boil, then reduce heat and simmer until rice and pork are cooked through and water is absorbed.</li>
+                                <li>Garnish with coriander leaves and serve hot.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/kbf8bESSZOA?si=89S0IxUdu3W_nkf0">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Phuklein</h3>
+<img src="images/Pukhlein.webp" alt="Phuklein">
+<div class="recipe-content">
+    <h4 class="recipe-title">Phuklein Recipe:</h4>
+    <ul>
+        <li><strong>Ingredients:</strong>
+            <ul>
+                <li>1 cup rice flour</li>
+                <li>1 cup grated coconut</li>
+                <li>1/2 cup jaggery, grated</li>
+                <li>1/2 teaspoon cardamom powder</li>
+                <li>1/4 teaspoon baking soda</li>
+                <li>1/2 cup water (or as needed)</li>
+                <li>Oil for frying</li>
+            </ul>
+        </li>
+        <li><strong>Instructions:</strong>
+            <ol>
+                <li>In a mixing bowl, combine rice flour, grated coconut, jaggery, cardamom powder, and baking soda.</li>
+                <li>Gradually add water to form a smooth, thick batter.</li>
+                <li>Heat oil in a pan for frying. Drop spoonfuls of the batter into the hot oil.</li>
+                <li>Fry until golden brown and crispy. Remove with a slotted spoon and drain on paper towels.</li>
+                <li>Let cool slightly before serving.</li>
+            </ol>
+        </li>
+    </ul>
+    <button class="open-popup" data-video="https://www.youtube.com/embed/UFA4whaKzKg?si=Tt95gGZHgdBzrZbU">Watch Recipe Video</button>
+</div>
+
+
+            <!-- Dish 3 -->
+            <div class="recipe-section">
+                <h3>Tungrymbai</h3>
+                <img src="images/tungrymbai.jpg" alt="Tungrymbai">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Tungrymbai Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>200 grams fermented soybeans</li>
+                                <li>1 large onion, finely chopped</li>
+                                <li>2-3 green chilies, chopped</li>
+                                <li>1 teaspoon ginger-garlic paste</li>
+                                <li>1 tablespoon oil</li>
+                                <li>Salt to taste</li>
+                                <li>Coriander leaves for garnish</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan and sauté onions until translucent.</li>
+                                <li>Add ginger-garlic paste and green chilies. Cook for a minute.</li>
+                                <li>Add fermented soybeans and mix well. Cook for 5-7 minutes.</li>
+                                <li>Season with salt and garnish with coriander leaves.</li>
+                                <li>Serve warm with rice or as a side dish.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/q8oJguerBnA?si=wK2hAg5CjtMgP2yU">Watch Recipe Video</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.open-popup').forEach(button => {
+            button.addEventListener('click', function() {
+                const videoUrl = this.getAttribute('data-video');
+                document.querySelector('.popup-overlay').style.display = 'flex';
+                document.querySelector('.popup-overlay iframe').src = videoUrl;
+            });
+        });
+
+        document.querySelector('.close-popup').addEventListener('click', function() {
+            document.querySelector('.popup-overlay').style.display = 'none';
+            document.querySelector('.popup-overlay iframe').src = '';
+        });
+
+        document.querySelector('.popup-overlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+                document.querySelector('.popup-overlay iframe').src = '';
+            }
+        });
+    </script>
+</body>
+</html>

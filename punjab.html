@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Punjab</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #FFCC00;
+        }
+
+        h2 {
+            color: #FFCC00;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Punjab</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Makki di Roti & Sarson da Saag</h3>
+                <img src="images/makki-di-roti-sarson-da-saag.jpg" alt="Makki di Roti & Sarson da Saag">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Makki di Roti Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>2 cups maize flour (makki ka atta)</li>
+                                <li>Warm water, as required</li>
+                                <li>1/2 teaspoon salt</li>
+                                <li>Ghee for roasting</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Combine maize flour and salt in a bowl.</li>
+                                <li>Add warm water gradually to make a soft dough.</li>
+                                <li>Divide the dough into small balls and flatten them using your palms.</li>
+                                <li>Heat a tawa and roast the rotis with ghee until golden brown.</li>
+                                <li>Serve hot with Sarson da Saag.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <h4 class="recipe-title">Sarson da Saag Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500g mustard greens (sarson)</li>
+                                <li>250g spinach (palak)</li>
+                                <li>1 onion, chopped</li>
+                                <li>2 tomatoes, chopped</li>
+                                <li>4-5 garlic cloves, chopped</li>
+                                <li>1-inch ginger, chopped</li>
+                                <li>2 green chilies, chopped</li>
+                                <li>2 tablespoons maize flour</li>
+                                <li>2 tablespoons ghee</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Boil mustard greens and spinach until tender, then blend into a coarse paste.</li>
+                                <li>Heat ghee in a pan and sauté garlic, ginger, green chilies, and onion until golden.</li>
+                                <li>Add tomatoes and cook until soft.</li>
+                                <li>Add the blended greens and cook on low heat for 15 minutes.</li>
+                                <li>Add maize flour to thicken the saag, mix well, and cook for another 5 minutes.</li>
+                                <li>Serve hot with Makki di Roti.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/tDE2_XKqAlQ?si=9co6t8nUTKOF03C8">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Amritsari Kulcha</h3>
+                <img src="images/amritsari-kulcha.jpg" alt="Amritsari Kulcha">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Amritsari Kulcha Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>2 cups all-purpose flour (maida)</li>
+                                <li>1/2 cup yogurt</li>
+                                <li>1 teaspoon sugar</li>
+                                <li>1 teaspoon baking powder</li>
+                                <li>1/2 teaspoon baking soda</li>
+                                <li>1/2 cup boiled and mashed potatoes</li>
+                                <li>1 onion, finely chopped</li>
+                                <li>1/2 teaspoon cumin seeds</li>
+                                <li>1/2 teaspoon garam masala</li>
+                                <li>1 tablespoon chopped coriander leaves</li>
+                                <li>Salt to taste</li>
+                                <li>Butter for brushing</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Mix flour, yogurt, sugar, baking powder, and baking soda to form a dough. Let it rest for 1-2 hours.</li>
+                                <li>Mix mashed potatoes, onion, cumin seeds, garam masala, coriander leaves, and salt for the filling.</li>
+                                <li>Divide the dough into balls, stuff each with filling, and flatten into discs.</li>
+                                <li>Preheat a tawa or griddle and cook the kulchas with butter until golden brown on both sides.</li>
+                                <li>Serve hot with chole or pickles.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/pbI8PkiSB8E?si=HUOR_Vgzi1mBFCmE">Watch Recipe Video</button>
+                </div>
+            </div>
+            <h3>Butter Chicken</h3>
+<img src="images/butter-chicken.jpg" alt="Butter Chicken">
+<div class="recipe-content">
+    <h4 class="recipe-title">Butter Chicken Recipe:</h4>
+    <ul>
+        <li><strong>Ingredients:</strong>
+            <ul>
+                <li>500g chicken, cut into pieces</li>
+                <li>1 cup yogurt</li>
+                <li>2 tablespoons lemon juice</li>
+                <li>2 tablespoons butter</li>
+                <li>1 onion, finely chopped</li>
+                <li>2 tomatoes, pureed</li>
+                <li>1/2 cup cream</li>
+                <li>1 tablespoon ginger-garlic paste</li>
+                <li>1 teaspoon red chili powder</li>
+                <li>1 teaspoon garam masala</li>
+                <li>Salt to taste</li>
+            </ul>
+        </li>
+        <li><strong>Instructions:</strong>
+            <ol>
+                <li>Marinate chicken in yogurt, lemon juice, and salt for at least 2 hours.</li>
+                <li>Heat butter in a pan, sauté onions until golden, then add ginger-garlic paste and cook for 2 minutes.</li>
+                <li>Add tomato puree, red chili powder, and cook until the oil separates.</li>
+                <li>Add marinated chicken and cook until done.</li>
+                <li>Stir in cream and garam masala, cook for another 5 minutes.</li>
+                <li>Serve hot with naan or rice.</li>
+            </ol>
+        </li>
+    </ul>
+    <button class="open-popup" data-video="https://www.youtube.com/embed/a03U45jFxOI?si=Z8f_BG0dnxfdz99s">Watch Recipe Video</button>
+</div>
+<div class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <iframe src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+</div>
+</section>
+<footer>
+<p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+</footer>
+
+<script>
+const popupOverlay = document.querySelector('.popup-overlay');
+const popupContent = document.querySelector('.popup-content iframe');
+const closePopup = document.querySelector('.close-popup');
+const openPopupButtons = document.querySelectorAll('.open-popup');
+
+openPopupButtons.forEach(button => {
+button.addEventListener('click', () => {
+    const videoSrc = button.getAttribute('data-video');
+    popupContent.src = videoSrc;
+    popupOverlay.style.display = 'flex';
+});
+});
+
+closePopup.addEventListener('click', () => {
+popupOverlay.style.display = 'none';
+popupContent.src = '';
+});
+</script>
+</body>
+</html>

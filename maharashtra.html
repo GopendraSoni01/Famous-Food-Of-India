@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Maharashtra</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #FF5722;
+        }
+
+        h2 {
+            color: #FF5722;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Styles for the popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Maharashtra</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Vada Pav</h3>
+                <img src="images/pexels-dhally-romy-16363250-15017417.jpg" alt="Vada Pav">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Vada Pav Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>4-6 pav (bread rolls)</li>
+                                <li>2 large potatoes, boiled and mashed</li>
+                                <li>1 teaspoon mustard seeds</li>
+                                <li>1 teaspoon turmeric powder</li>
+                                <li>1 teaspoon cumin seeds</li>
+                                <li>1 teaspoon red chili powder</li>
+                                <li>1 tablespoon oil</li>
+                                <li>Salt to taste</li>
+                                <li>1 cup besan (gram flour)</li>
+                                <li>Water to make batter</li>
+                                <li>Oil for frying</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan, add mustard seeds, cumin seeds, and turmeric powder.</li>
+                                <li>Add mashed potatoes and red chili powder. Mix well and cook for a few minutes. Allow to cool.</li>
+                                <li>Form potato mixture into balls.</li>
+                                <li>Prepare a batter with besan and water. Dip potato balls in the batter and fry until golden brown.</li>
+                                <li>Assemble Vada Pav by placing a vada (potato ball) inside each pav. Serve with chutneys and fried green chilies.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/LE-58cHgDaw?si=b-g0ceGLpO8V8dmy">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Pav Bhaji</h3>
+                <img src="images/pexels-saveurssecretes-5410400.jpg" alt="Pav Bhaji">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Pav Bhaji Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>4-6 pav (bread rolls)</li>
+                                <li>2 cups mixed vegetables (potatoes, carrots, peas, etc.), boiled and mashed</li>
+                                <li>1 large onion, finely chopped</li>
+                                <li>2 tomatoes, chopped</li>
+                                <li>1 tablespoon ginger-garlic paste</li>
+                                <li>2 teaspoons pav bhaji masala</li>
+                                <li>1 teaspoon turmeric powder</li>
+                                <li>1 teaspoon red chili powder</li>
+                                <li>1 tablespoon butter</li>
+                                <li>Salt to taste</li>
+                                <li>Coriander leaves for garnish</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat butter in a pan, add onions and ginger-garlic paste. Sauté until onions are golden brown.</li>
+                                <li>Add tomatoes, pav bhaji masala, turmeric powder, and red chili powder. Cook until tomatoes are soft.</li>
+                                <li>Add mashed vegetables and mix well. Cook for a few minutes, adding water as needed to adjust consistency.</li>
+                                <li>Garnish with coriander leaves and a dollop of butter.</li>
+                                <li>Serve hot with buttered pav (bread rolls) toasted on a griddle.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/sAnPUIvPc1I?si=SB0X7dWu89AKZ8-r">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="recipe-section">
+                <h3>Puran Poli</h3>
+                <img src="images/Puran Poli.jpg" alt="Puran Poli">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Puran Poli Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup chana dal (split chickpeas)</li>
+                                <li>1 cup jaggery, grated</li>
+                                <li>1 cup all-purpose flour</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1/2 teaspoon cardamom powder</li>
+                                <li>1 tablespoon ghee</li>
+                                <li>Water as needed</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Cook chana dal in water until soft. Drain and mash.</li>
+                                <li>Mix mashed dal with jaggery, turmeric powder, and cardamom powder. Cook until thickened and allow to cool.</li>
+                                <li>Prepare a dough with all-purpose flour, ghee, and water. Divide into small balls.</li>
+                                <li>Flatten each dough ball and fill with the dal mixture. Roll out into thin circles.</li>
+                                <li>Cook each poli on a hot griddle until golden brown on both sides.</li>
+                                <li>Serve warm with ghee or milk.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/l7Efb-HjDPU?si=lOL9j-rrhqkHQY9w">Watch Recipe Video</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.open-popup').forEach(button => {
+            button.addEventListener('click', function() {
+                const videoUrl = this.getAttribute('data-video');
+                document.querySelector('.popup-overlay').style.display = 'flex';
+                document.querySelector('.popup-overlay iframe').src = videoUrl;
+            });
+        });
+
+        document.querySelector('.close-popup').addEventListener('click', function() {
+            document.querySelector('.popup-overlay').style.display = 'none';
+            document.querySelector('.popup-overlay iframe').src = '';
+        });
+
+        document.querySelector('.popup-overlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+                document.querySelector('.popup-overlay iframe').src = '';
+            }
+        });
+    </script>
+</body>
+</html>

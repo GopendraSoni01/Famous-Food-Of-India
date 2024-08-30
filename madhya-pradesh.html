@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Madhya Pradesh</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #4CAF50;
+        }
+
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Styles for the popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Madhya Pradesh</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Poha</h3>
+                <img src="images/pexels-shahbaz-ansari-283673909-13063292.jpg" alt="Poha">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Poha Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>2 cups poha (flattened rice)</li>
+                                <li>1 onion, finely chopped</li>
+                                <li>1 green chili, chopped</li>
+                                <li>1 teaspoon mustard seeds</li>
+                                <li>1 teaspoon turmeric powder</li>
+                                <li>1/2 teaspoon cumin seeds</li>
+                                <li>1/2 cup peanuts</li>
+                                <li>1 tablespoon oil</li>
+                                <li>Coriander leaves for garnish</li>
+                                <li>Lemon juice to taste</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Rinse poha in water and drain. Set aside.</li>
+                                <li>Heat oil in a pan, add mustard seeds, cumin seeds, and peanuts. Sauté until peanuts are roasted.</li>
+                                <li>Add chopped onions and green chili. Sauté until onions are translucent.</li>
+                                <li>Add turmeric powder and salt. Stir well.</li>
+                                <li>Add poha and mix thoroughly. Cook for 5-7 minutes.</li>
+                                <li>Garnish with coriander leaves and a squeeze of lemon juice.</li>
+                                <li>Serve hot.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/hL-BnQF_gmI?si=BQdhPfGRdoHxOo4d">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Bhutte ka Kees</h3>
+                <img src="images/bhutte_ka_kees.jpg" alt="Bhutte ka Kees">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Bhutte ka Kees Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>2 cups grated corn</li>
+                                <li>1 cup milk</li>
+                                <li>1 onion, chopped</li>
+                                <li>1 green chili, chopped</li>
+                                <li>1 teaspoon mustard seeds</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1/2 teaspoon cumin seeds</li>
+                                <li>1 tablespoon ghee</li>
+                                <li>Coriander leaves for garnish</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat ghee in a pan, add mustard seeds and cumin seeds. Sauté until they crackle.</li>
+                                <li>Add onions and green chili. Sauté until onions are translucent.</li>
+                                <li>Add turmeric powder and grated corn. Mix well.</li>
+                                <li>Add milk and cook until the corn is tender and the mixture thickens.</li>
+                                <li>Garnish with coriander leaves.</li>
+                                <li>Serve hot with roti or rice.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/NP9BE79Ftf4?si=TMLaQOkuW4t2P3R_">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="recipe-section">
+                <h3>Dal Bafla</h3>
+                <img src="images/dal bafle.jpg" alt="Dal Bafla">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Dal Bafla Recipe:</h4>
+                    <ul>
+                        <li><strong>Dal Ingredients:</strong>
+                            <ul>
+                                <li>1 cup arhar dal (pigeon pea)</li>
+                                <li>1 onion, chopped</li>
+                                <li>2 tomatoes, chopped</li>
+                                <li>1 teaspoon ginger-garlic paste</li>
+                                <li>1 teaspoon cumin seeds</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1 teaspoon coriander powder</li>
+                                <li>1 teaspoon garam masala</li>
+                                <li>Salt to taste</li>
+                                <li>Oil for cooking</li>
+                            </ul>
+                        </li>
+                        <li><strong>Bafla Ingredients:</strong>
+                            <ul>
+                                <li>2 cups wheat flour</li>
+                                <li>1/2 teaspoon caraway seeds (ajwain)</li>
+                                <li>1/2 teaspoon cumin seeds</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>Salt to taste</li>
+                                <li>Water for kneading</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>For Dal: Cook arhar dal with turmeric powder until soft. Prepare a tempering with cumin seeds, ginger-garlic paste, and onions, then add tomatoes and spices. Mix with cooked dal and simmer.</li>
+                                <li>For Bafla: Prepare a dough with wheat flour, caraway seeds, cumin seeds, turmeric, and salt. Shape into round balls and cook them in boiling water. Once cooked, bake or roast until golden.</li>
+                                <li>Serve dal with bafla, topped with ghee if desired.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/TqX1b3iJ18Y?si=oBZRBL-RpSo7p3uM">Watch Recipe Video</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.open-popup').forEach(button => {
+            button.addEventListener('click', function() {
+                const videoUrl = this.getAttribute('data-video');
+                document.querySelector('.popup-overlay').style.display = 'flex';
+                document.querySelector('.popup-overlay iframe').src = videoUrl;
+            });
+        });
+
+        document.querySelector('.close-popup').addEventListener('click', function() {
+            document.querySelector('.popup-overlay').style.display = 'none';
+            document.querySelector('.popup-overlay iframe').src = '';
+        });
+
+        document.querySelector('.popup-overlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+                document.querySelector('.popup-overlay iframe').src = '';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Rajasthan</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #FF5722;
+        }
+
+        h2 {
+            color: #FF5722;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Styles for the popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Rajasthan</h2>
+            <h3>Dal Bati Churma</h3>
+<img src="images/dal-baati-churma.jpg" alt="Dal Bati Churma">
+<div class="recipe-content">
+    <h4 class="recipe-title">Dal Bati Churma Recipe:</h4>
+    <ul>
+        <li><strong>Ingredients:</strong>
+            <ul>
+                <li>For Dal:
+                    <ul>
+                        <li>1 cup split yellow moong dal</li>
+                        <li>1 onion, chopped</li>
+                        <li>2 tomatoes, chopped</li>
+                        <li>1 teaspoon ginger-garlic paste</li>
+                        <li>Spices (cumin, turmeric, red chili powder, garam masala)</li>
+                        <li>Salt to taste</li>
+                        <li>Fresh coriander for garnish</li>
+                    </ul>
+                </li>
+                <li>For Bati:
+                    <ul>
+                        <li>2 cups whole wheat flour</li>
+                        <li>1/2 cup ghee</li>
+                        <li>1 teaspoon baking powder</li>
+                        <li>Salt to taste</li>
+                    </ul>
+                </li>
+                <li>For Churma:
+                    <ul>
+                        <li>1 cup wheat flour bati, crumbled</li>
+                        <li>1/2 cup ghee</li>
+                        <li>1/2 cup jaggery or sugar</li>
+                        <li>Cardamom powder</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><strong>Instructions:</strong>
+            <ol>
+                <li>Cook the dal with water and spices until soft.</li>
+                <li>For bati, mix flour, ghee, baking powder, and salt. Form into balls and bake until golden.</li>
+                <li>For churma, crumble the baked batis, mix with ghee, jaggery, and cardamom powder.</li>
+                <li>Serve the dal with batis and churma on the side, garnished with coriander.</li>
+            </ol>
+        </li>
+    </ul>
+    <button class="open-popup" data-video="https://www.youtube.com/embed/mZ4xTelTAGk?si=M_93BtLLiAWnQBiX">Watch Recipe</button>
+</div>
+<h3>Lal Maas</h3>
+<img src="images/lal-maas.jpg" alt="Lal Maas">
+<div class="recipe-content">
+    <h4 class="recipe-title">Lal Maas Recipe:</h4>
+    <ul>
+        <li><strong>Ingredients:</strong>
+            <ul>
+                <li>500g mutton, cut into pieces</li>
+                <li>4-5 dried red chilies</li>
+                <li>1 tablespoon ginger-garlic paste</li>
+                <li>1 onion, finely chopped</li>
+                <li>2 tomatoes, pureed</li>
+                <li>1 teaspoon cumin seeds</li>
+                <li>1 teaspoon coriander powder</li>
+                <li>1/2 teaspoon turmeric powder</li>
+                <li>Salt to taste</li>
+                <li>2 tablespoons mustard oil</li>
+                <li>Fresh coriander for garnish</li>
+            </ul>
+        </li>
+        <li><strong>Instructions:</strong>
+            <ol>
+                <li>Soak dried red chilies in warm water for 15 minutes, then blend into a paste.</li>
+                <li>Heat mustard oil in a pan and sauté cumin seeds and chopped onions until golden.</li>
+                <li>Add ginger-garlic paste and cook until the raw smell disappears.</li>
+                <li>Add the mutton pieces and cook until they are browned.</li>
+                <li>Stir in the tomato puree, red chili paste, coriander powder, turmeric, and salt.</li>
+                <li>Add water and simmer until the mutton is tender (about 45 minutes to 1 hour).</li>
+                <li>Garnish with fresh coriander and serve with rice or roti.</li>
+            </ol>
+        </li>
+    </ul>
+    <button class="open-popup" data-video="https://www.youtube.com/embed/x6VBBUDXQbo?si=xRnLnmgTZ_fGNwZC">Watch Recipe</button>
+</div>
+<h3>Gatte Ki Sabzi</h3>
+<img src="images/gatte-ki-sabzi.jpg" alt="Gatte Ki Sabzi">
+<div class="recipe-content">
+    <h4 class="recipe-title">Gatte Ki Sabzi Recipe:</h4>
+    <ul>
+        <li><strong>Ingredients:</strong>
+            <ul>
+                <li>1 cup gram flour (besan)</li>
+                <li>1/2 teaspoon turmeric powder</li>
+                <li>1 teaspoon red chili powder</li>
+                <li>1 teaspoon cumin seeds</li>
+                <li>Salt to taste</li>
+                <li>2 tablespoons oil</li>
+                <li>1 onion, chopped</li>
+                <li>2 tomatoes, pureed</li>
+                <li>1/2 cup yogurt</li>
+                <li>1 teaspoon garam masala</li>
+                <li>Fresh coriander for garnish</li>
+            </ul>
+        </li>
+        <li><strong>Instructions:</strong>
+            <ol>
+                <li>In a bowl, mix gram flour, turmeric, red chili powder, cumin seeds, and salt. Add water to make a dough.</li>
+                <li>Roll the dough into cylindrical shapes and steam for 15-20 minutes.</li>
+                <li>Cut the steamed dough into small pieces.</li>
+                <li>In a pan, heat oil and sauté onions until golden brown.</li>
+                <li>Add tomato puree, cook until oil separates, then add yogurt and mix well.</li>
+                <li>Add gatte pieces, garam masala, and cook for another 5 minutes.</li>
+                <li>Garnish with fresh coriander and serve hot with roti or rice.</li>
+            </ol>
+        </li>
+    </ul>
+    <button class="open-popup" data-video="https://www.youtube.com/embed/4_rBh5AomG0?si=QFmV_U4D5NU6mgt9">Watch Recipe</button>
+</div>
+<div class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <iframe src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+</div>
+</section>
+<footer>
+<p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+</footer>
+
+<script>
+const popupOverlay = document.querySelector('.popup-overlay');
+const popupContent = document.querySelector('.popup-content iframe');
+const closePopup = document.querySelector('.close-popup');
+const openPopupButtons = document.querySelectorAll('.open-popup');
+
+openPopupButtons.forEach(button => {
+button.addEventListener('click', () => {
+    const videoSrc = button.getAttribute('data-video');
+    popupContent.src = videoSrc;
+    popupOverlay.style.display = 'flex';
+});
+});
+
+closePopup.addEventListener('click', () => {
+popupOverlay.style.display = 'none';
+popupContent.src = '';
+});
+</script>
+</body>
+</html>

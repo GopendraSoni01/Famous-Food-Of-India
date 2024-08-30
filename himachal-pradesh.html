@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Himachal Pradesh</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #FF5733;
+        }
+
+        h2 {
+            color: #FF5733;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Styles for the popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Himachal Pradesh</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Chana Madra</h3>
+                <img src="images/vecteezy_chickpeas-in-a-curry_47137670.jpg" alt="Chana Madra">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Chana Madra Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup chana (chickpeas), soaked overnight</li>
+                                <li>2 tablespoons ghee</li>
+                                <li>1 teaspoon cumin seeds</li>
+                                <li>1 onion, finely chopped</li>
+                                <li>1 teaspoon ginger-garlic paste</li>
+                                <li>1 cup yogurt, whisked</li>
+                                <li>1 teaspoon coriander powder</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1/2 teaspoon red chili powder</li>
+                                <li>Salt to taste</li>
+                                <li>Fresh coriander for garnish</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat ghee in a pan and add cumin seeds.</li>
+                                <li>Add onions and cook until golden brown.</li>
+                                <li>Add ginger-garlic paste and sauté for a minute.</li>
+                                <li>Add soaked chana and cook for a few minutes.</li>
+                                <li>Add yogurt, coriander powder, turmeric powder, red chili powder, and salt.</li>
+                                <li>Simmer until chana is cooked and the gravy thickens.</li>
+                                <li>Garnish with fresh coriander and serve hot with rice or roti.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/-v7_3xIolT8?si=W-38yXTiL9qMDghu">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Dham</h3>
+                <img src="images/dham.jpg" alt="Dham">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Dham Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup rice</li>
+                                <li>1/2 cup urad dal (split black gram)</li>
+                                <li>1/4 cup chana dal (split chickpeas)</li>
+                                <li>1/4 cup curd</li>
+                                <li>1 teaspoon mustard seeds</li>
+                                <li>1 teaspoon cumin seeds</li>
+                                <li>1 green chili, chopped</li>
+                                <li>1 tablespoon ghee</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>Salt to taste</li>
+                                <li>Fresh coriander for garnish</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Soak rice, urad dal, and chana dal in water for 2 hours.</li>
+                                <li>Drain and grind into a coarse paste.</li>
+                                <li>Heat ghee in a pan and add mustard seeds and cumin seeds.</li>
+                                <li>Add chopped green chili and sauté for a minute.</li>
+                                <li>Add the dal mixture, turmeric powder, and salt.</li>
+                                <li>Cook until the mixture thickens.</li>
+                                <li>Mix in curd and cook for a few more minutes.</li>
+                                <li>Garnish with fresh coriander and serve hot.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/UIY5Ge0Yp3M?si=Cg0_KwkOCccjc-Vj">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="recipe-section">
+                <h3>Siddu</h3>
+                <img src="images/siddu.jpg" alt="Siddu">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Siddu Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>2 cups whole wheat flour</li>
+                                <li>1/2 cup chopped walnuts</li>
+                                <li>1/2 cup raisins</li>
+                                <li>1/4 cup jaggery, grated</li>
+                                <li>1 teaspoon fennel seeds</li>
+                                <li>1/2 teaspoon cardamom powder</li>
+                                <li>1/4 teaspoon baking soda</li>
+                                <li>Water as needed</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Mix whole wheat flour, fennel seeds, cardamom powder, and baking soda in a bowl.</li>
+                                <li>Add walnuts, raisins, and jaggery. Mix well.</li>
+                                <li>Add water gradually to form a soft dough.</li>
+                                <li>Divide the dough into small balls and flatten them slightly.</li>
+                                <li>Steam the flattened dough in a steamer for about 15-20 minutes.</li>
+                                <li>Serve hot with ghee or butter.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/azX5qpYPQsY?si=d18YQyJT154wcl5Q">Watch Recipe Video</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup for video -->
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <div class="video-wrapper">
+                <iframe src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Famous Foods of India</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.open-popup').forEach(button => {
+            button.addEventListener('click', function() {
+                const videoUrl = this.getAttribute('data-video');
+                document.querySelector('.popup-overlay').style.display = 'flex';
+                document.querySelector('.popup-overlay iframe').src = videoUrl;
+            });
+        });
+
+        document.querySelector('.close-popup').addEventListener('click', function() {
+            document.querySelector('.popup-overlay').style.display = 'none';
+            document.querySelector('.popup-overlay iframe').src = '';
+        });
+
+        document.querySelector('.popup-overlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+                document.querySelector('.popup-overlay iframe').src = '';
+            }
+        });
+    </script>
+</body>
+</html>

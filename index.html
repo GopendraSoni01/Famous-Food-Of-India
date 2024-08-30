@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of India</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Dropdown Menu CSS */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            color: #000;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            max-height: 300px; /* Adjust as needed */
+            overflow-y: auto;
+            width: 200px; /* Adjust width as needed */
+        }
+
+        .dropdown-content a {
+            color: #000;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Ensure other sections have sufficient padding */
+        section {
+            padding: 20px;
+        }
+
+        /* Style for the placeholder that holds state links */
+        .state-links-placeholder {
+            display: none; /* Initially hidden if not needed */
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- Dropdown Menu for States -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Explore States</a>
+                    <div class="dropdown-content">
+                        <!-- State links -->
+                        <a href="andhra-pradesh.html">Andhra Pradesh</a>
+                        <a href="arunachal-pradesh.html">Arunachal Pradesh</a>
+                        <a href="assam.html">Assam</a>
+                        <a href="bihar.html">Bihar</a>
+                        <a href="chhattisgarh.html">Chhattisgarh</a>
+                        <a href="goa.html">Goa</a>
+                        <a href="gujarat.html">Gujarat</a>
+                        <a href="haryana.html">Haryana</a>
+                        <a href="himachal-pradesh.html">Himachal Pradesh</a>
+                        <a href="jammu-kashmir.html">Jammu & Kashmir</a>
+                        <a href="jharkhand.html">Jharkhand</a>
+                        <a href="karnataka.html">Karnataka</a>
+                        <a href="kerala.html">Kerala</a>
+                        <a href="madhya-pradesh.html">Madhya Pradesh</a>
+                        <a href="maharashtra.html">Maharashtra</a>
+                        <a href="manipur.html">Manipur</a>
+                        <a href="meghalaya.html">Meghalaya</a>
+                        <a href="mizoram.html">Mizoram</a>
+                        <a href="nagaland.html">Nagaland</a>
+                        <a href="odisha.html">Odisha</a>
+                        <a href="punjab.html">Punjab</a>
+                        <a href="rajasthan.html">Rajasthan</a>
+                        <a href="sikkim.html">Sikkim</a>
+                        <a href="tamil-nadu.html">Tamil Nadu</a>
+                        <a href="telangana.html">Telangana</a>
+                        <a href="tripura.html">Tripura</a>
+                        <a href="uttar-pradesh.html">Uttar Pradesh</a>
+                        <a href="uttarakhand.html">Uttarakhand</a>
+                        <a href="west-bengal.html">West Bengal</a>
+                        
+                        <!-- Add Union Territories similarly -->
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Intro Section -->
+    <header id="intro">
+        <div class="intro-content">
+            <h2 style="background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; border-radius: 5px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+                Welcome to the Culinary World of India!
+            </h2>
+            <p style="background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 8px; border-radius: 5px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">
+                Explore the diverse and delicious world of Indian cuisine. From the spicy curries of the South to the rich sweets of the North, there's something for everyone to enjoy.
+            </p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-content">
+            <h2>About This Site</h2>
+            <p><strong>Discover the famous dishes of each Indian state and learn how to cook them at home. This website is your gateway to exploring the rich and diverse culinary traditions of India. Each state has its unique flavors and ingredients, and we bring you authentic recipes, cooking tips, and fascinating insights into regional cuisine. From the spicy delights of South India to the sweet treats of the North, embark on a culinary journey with us and bring the taste of India to your kitchen.</strong></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-content">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or suggestions, feel free to reach out to us. <a href="#" id="contact-link">Contact us</a></p>
+        </div>
+    </section>
+
+    <!-- Contact Form Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Famous Foods of India</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle modal functionality
+        document.getElementById('contact-link').onclick = function() {
+            document.getElementById('contact-modal').style.display = 'block';
+        }
+
+        document.querySelector('.close').onclick = function() {
+            document.getElementById('contact-modal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('contact-modal')) {
+                document.getElementById('contact-modal').style.display = 'none';
+            }
+        }
+    </script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyC7-qckZclJq6SA0HcRPSvPJgrK0mYY-Ts",
+          authDomain: "famous-food-of-india.firebaseapp.com",
+          projectId: "famous-food-of-india",
+          storageBucket: "famous-food-of-india.appspot.com",
+          messagingSenderId: "1082096032971",
+          appId: "1:1082096032971:web:f121e4f07be14b3183cf4e",
+          measurementId: "G-JVSTH6J68H"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>

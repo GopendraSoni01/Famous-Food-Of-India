@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Telangana</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #E91E63;
+        }
+
+        h2 {
+            color: #E91E63;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Telangana</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Hyderabadi Biryani</h3>
+                <img src="images/hyderabadi-biryani.jpg" alt="Hyderabadi Biryani">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Hyderabadi Biryani Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500g basmati rice</li>
+                                <li>500g chicken, cut into pieces</li>
+                                <li>2 onions, thinly sliced</li>
+                                <li>2 tomatoes, chopped</li>
+                                <li>1 cup yogurt</li>
+                                <li>2 tablespoons biryani masala</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1 teaspoon chili powder</li>
+                                <li>2 tablespoons ginger-garlic paste</li>
+                                <li>1/4 cup mint leaves</li>
+                                <li>1/4 cup coriander leaves</li>
+                                <li>4 tablespoons oil</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Soak the basmati rice in water for 30 minutes.</li>
+                                <li>Heat oil in a pan, add onions, and sauté until golden brown.</li>
+                                <li>Add ginger-garlic paste and cook until raw smell disappears.</li>
+                                <li>Add tomatoes, biryani masala, turmeric powder, chili powder, and salt. Cook until tomatoes are soft.</li>
+                                <li>Add chicken pieces and cook until they are browned and cooked through.</li>
+                                <li>Stir in yogurt, mint leaves, and coriander leaves. Cook for a few minutes.</li>
+                                <li>In a separate pot, cook the rice until it's 70% done. Drain the water.</li>
+                                <li>Layer the chicken mixture and rice in a heavy-bottomed pot. Cook on low heat for 15-20 minutes.</li>
+                                <li>Serve hot with raita or salan.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/BCKMeHuRX0I?si=m8qgR95bYEMIZLn1">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Saddhi</h3>
+                <img src="images/saddhi.jpg" alt="Saddhi">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Saddhi Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup toor dal (pigeon peas)</li>
+                                <li>1/2 cup chopped vegetables (carrots, beans, potatoes)</li>
+                                <li>1 onion, chopped</li>
+                                <li>1 tomato, chopped</li>
+                                <li>1 tablespoon ginger-garlic paste</li>
+                                <li>1 teaspoon cumin seeds</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1 teaspoon mustard seeds</li>
+                                <li>1 tablespoon oil</li>
+                                <li>Salt to taste</li>
+                                <li>Chopped coriander for garnish</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Cook toor dal in a pressure cooker until soft.</li>
+                                <li>Heat oil in a pan, add cumin seeds and mustard seeds. Let them splutter.</li>
+                                <li>Add onions, ginger-garlic paste, and tomatoes. Sauté until onions are translucent.</li>
+                                <li>Add chopped vegetables, turmeric powder, and salt. Cook until vegetables are tender.</li>
+                                <li>Add the cooked dal and mix well. Simmer for a few minutes.</li>
+                                <li>Garnish with chopped coriander and serve with rice or roti.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/azX5qpYPQsY?si=QYVkJ29Y0lA1qfG4">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="recipe-section">
+                <h3>Gongura Pachadi</h3>
+                <img src="images/gongura-pachadi.jpg" alt="Gongura Pachadi">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Gongura Pachadi Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 bunch gongura (sorrel leaves)</li>
+                                <li>1 onion, chopped</li>
+                                <li>2 green chilies</li>
+                                <li>1 tablespoon ginger-garlic paste</li>
+                                <li>1 tablespoon oil</li>
+                                <li>1 teaspoon mustard seeds</li>
+                                <li>1/2 teaspoon fenugreek seeds</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Wash and chop the gongura leaves.</li>
+                                <li>Heat oil in a pan, add mustard seeds and fenugreek seeds. Let them splutter.</li>
+                                <li>Add onions and green chilies. Sauté until onions are golden brown.</li>
+                                <li>Add ginger-garlic paste and cook until raw smell disappears.</li>
+                                <li>Add the chopped gongura leaves and salt. Cook until the leaves are wilted and well-cooked.</li>
+                                <li>Let it cool, then blend into a coarse paste.</li>
+                                <li>Serve with rice or as a side dish with any meal.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/LYZ8rjN4yN0?si=TUB_RRcnr-j1RW7e">Watch Recipe Video</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup" id="close-popup">&times;</span>
+            <div class="video-wrapper">
+                <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+        </footer>
+
+    <script>
+        document.querySelectorAll('.open-popup').forEach(button => {
+            button.addEventListener('click', function() {
+                const videoSrc = this.getAttribute('data-video');
+                document.getElementById('video-frame').src = videoSrc;
+                document.getElementById('popup-overlay').style.display = 'flex';
+            });
+        });
+
+        document.getElementById('close-popup').addEventListener('click', function() {
+            document.getElementById('popup-overlay').style.display = 'none';
+            document.getElementById('video-frame').src = '';
+        });
+
+        document.getElementById('popup-overlay').addEventListener('click', function(event) {
+            if (event.target === this) {
+                document.getElementById('popup-overlay').style.display = 'none';
+                document.getElementById('video-frame').src = '';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Uttarakhand</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #4CAF50;
+        }
+
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Uttarakhand</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Aloo Keema</h3>
+                <img src="images/aloo-keema.jpg" alt="Aloo Keema">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Aloo Keema Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500g minced meat (lamb or goat)</li>
+                                <li>3 medium potatoes, peeled and cubed</li>
+                                <li>1 onion, finely chopped</li>
+                                <li>2 tomatoes, chopped</li>
+                                <li>1 tablespoon ginger-garlic paste</li>
+                                <li>1 teaspoon red chili powder</li>
+                                <li>1 teaspoon turmeric powder</li>
+                                <li>1 teaspoon garam masala</li>
+                                <li>1/2 teaspoon cumin seeds</li>
+                                <li>1/4 cup chopped coriander leaves</li>
+                                <li>Salt to taste</li>
+                                <li>Oil for cooking</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan, add cumin seeds, and sauté onions until golden brown.</li>
+                                <li>Add ginger-garlic paste and cook for a minute.</li>
+                                <li>Add minced meat and cook until it changes color.</li>
+                                <li>Add tomatoes, red chili powder, turmeric powder, and salt. Cook until tomatoes are soft.</li>
+                                <li>Add potatoes and enough water to cover the mixture. Simmer until potatoes and meat are tender.</li>
+                                <li>Stir in garam masala and coriander leaves. Cook for a few more minutes.</li>
+                                <li>Serve hot with roti or rice.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/9YOGqIGw1Wk?si=HDS8jO-mh32qSS2-">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Kandali Saag</h3>
+                <img src="images/kandali-saag.jpg" alt="Kandali Saag">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Kandali Saag Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500g kandali leaves (nettles), cleaned and chopped</li>
+                                <li>1 onion, finely chopped</li>
+                                <li>2 tomatoes, chopped</li>
+                                <li>1 tablespoon ginger-garlic paste</li>
+                                <li>1 teaspoon cumin seeds</li>
+                                <li>1 teaspoon coriander powder</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1/2 teaspoon red chili powder</li>
+                                <li>Salt to taste</li>
+                                <li>Oil for cooking</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan, add cumin seeds, and sauté onions until golden brown.</li>
+                                <li>Add ginger-garlic paste and cook for a minute.</li>
+                                <li>Add tomatoes, coriander powder, turmeric powder, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                                <li>Add chopped kandali leaves and cook on low heat until the leaves are tender and well-cooked.</li>
+                                <li>Adjust seasoning as needed. Serve hot with chapati.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/0wUZX_Iysx8?si=XFm1zwwIdFdX9GFt">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="recipe-section">
+                <h3>Bhatt Ki Churdkani</h3>
+                <img src="images/bhatt-ki-churdkani.jpg" alt="Bhatt Ki Churdkani">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Bhatt Ki Churdkani Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup bhatt (black beans), soaked overnight</li>
+                                <li>1 onion, finely chopped</li>
+                                <li>2 tomatoes, chopped</li>
+                                <li>1 tablespoon ginger-garlic paste</li>
+                                <li>1 teaspoon cumin seeds</li>
+                                <li>1 teaspoon coriander powder</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1/2 teaspoon red chili powder</li>
+                                <li>Salt to taste</li>
+                                <li>Oil for cooking</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan, add cumin seeds, and sauté onions until golden brown.</li>
+                                <li>Add ginger-garlic paste and cook for a minute.</li>
+                                <li>Add tomatoes, coriander powder, turmeric powder, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                                <li>Add soaked bhatt and enough water. Cook on low heat until the beans are tender and the curry thickens.</li>
+                                <li>Adjust seasoning as needed. Serve hot with rice or chapati.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/9DZQaA8y_W0?si=ToyvmZ5I7W3-094B">Watch Recipe Video</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup" id="close-popup">&times;</span>
+            <div class="video-wrapper">
+                <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+        </footer>
+
+    <script>
+        document.querySelectorAll('.open-popup').forEach(button => {
+            button.addEventListener('click', function() {
+                const videoSrc = this.getAttribute('data-video');
+                document.getElementById('video-frame').src = videoSrc;
+                document.getElementById('popup-overlay').style.display = 'flex';
+            });
+        });
+
+        document.getElementById('close-popup').addEventListener('click', function() {
+            document.getElementById('popup-overlay').style.display = 'none';
+            document.getElementById('video-frame').src = '';
+        });
+
+        document.getElementById('popup-overlay').addEventListener('click', function(event) {
+            if (event.target === this) {
+                document.getElementById('popup-overlay').style.display = 'none';
+                document.getElementById('video-frame').src = '';
+            }
+        });
+    </script>
+</body>
+</html>

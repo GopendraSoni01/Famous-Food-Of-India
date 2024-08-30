@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Odisha</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #4CAF50;
+        }
+
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Odisha</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Pakhala Bhata</h3>
+                <img src="images/pakhala-bhata.jpg" alt="Pakhala Bhata">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Pakhala Bhata Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>2 cups cooked rice</li>
+                                <li>4 cups water</li>
+                                <li>1 teaspoon cumin seeds</li>
+                                <li>1-2 green chilies, chopped</li>
+                                <li>1 tablespoon lemon juice</li>
+                                <li>Salt to taste</li>
+                                <li>Fresh coriander for garnish</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Soak the cooked rice in water for 4-5 hours or overnight.</li>
+                                <li>Add salt, cumin seeds, green chilies, and lemon juice to the soaked rice.</li>
+                                <li>Mix well and garnish with fresh coriander.</li>
+                                <li>Serve chilled with fried or mashed vegetables.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/3bfRw82FzRo?si=ThwIhgV6UDl6Gl-f">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Dalma</h3>
+                <img src="images/dalma.jpg" alt="Dalma">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Dalma Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup split yellow lentils (moong dal)</li>
+                                <li>1 potato, diced</li>
+                                <li>1 carrot, diced</li>
+                                <li>1 brinjal, diced</li>
+                                <li>1 tomato, chopped</li>
+                                <li>1 teaspoon turmeric powder</li>
+                                <li>1 teaspoon cumin seeds</li>
+                                <li>2-3 dried red chilies</li>
+                                <li>1 tablespoon ghee</li>
+                                <li>Salt to taste</li>
+                                <li>Fresh coriander for garnish</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Boil the lentils with turmeric powder and salt until soft.</li>
+                                <li>Add the diced vegetables and cook until tender.</li>
+                                <li>In a separate pan, heat ghee and add cumin seeds and dried red chilies for tempering.</li>
+                                <li>Pour the tempering over the dalma and mix well.</li>
+                                <li>Garnish with fresh coriander and serve hot with rice.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/DKYz5RO1gJQ?si=AfE386PVsXH6vpM9">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="recipe-section">
+                <h3>Chhena Poda</h3>
+                <img src="images/chhena-poda.jpg" alt="Chhena Poda">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Chhena Poda Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500g fresh paneer (chhena)</li>
+                                <li>1 cup sugar</li>
+                                <li>1/2 cup semolina (sooji)</li>
+                                <li>1 teaspoon cardamom powder</li>
+                                <li>1/2 cup chopped dry fruits</li>
+                                <li>Ghee for greasing</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Mix paneer, sugar, semolina, cardamom powder, and chopped dry fruits in a bowl.</li>
+                                <li>Grease a baking dish with ghee and pour the mixture into it.</li>
+                                <li>Bake in a preheated oven at 180°C for 30-40 minutes or until the top turns golden brown.</li>
+                                <li>Let it cool, then cut into slices and serve.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/5g8hrU7sJPg?si=lcDQCO_0msTFgXKq">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <div class="popup-overlay">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <iframe src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const popupOverlay = document.querySelector('.popup-overlay');
+        const popupContent = document.querySelector('.popup-content iframe');
+        const closePopup = document.querySelector('.close-popup');
+        const openPopupButtons = document.querySelectorAll('.open-popup');
+
+        openPopupButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const videoSrc = button.getAttribute('data-video');
+                popupContent.src = videoSrc;
+                popupOverlay.style.display = 'flex';
+            });
+        });
+
+        closePopup.addEventListener('click', () => {
+            popupOverlay.style.display = 'none';
+            popupContent.src = '';
+        });
+    </script>
+</body>
+</html>

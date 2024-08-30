@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Nagaland</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #4CAF50;
+        }
+
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Styles for the popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Nagaland</h2>
+
+            <!-- Dish 1: Smoked Pork with Bamboo Shoot -->
+            <div class="recipe-section">
+                <h3>Smoked Pork with Bamboo Shoot</h3>
+                <img src="images/Smoked Pork with Bamboo Shoot.jpg" alt="Smoked Pork with Bamboo Shoot">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Smoked Pork with Bamboo Shoot Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500g smoked pork</li>
+                                <li>100g bamboo shoots</li>
+                                <li>2 medium-sized tomatoes, chopped</li>
+                                <li>2 green chilies, slit</li>
+                                <li>1 tsp ginger-garlic paste</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Cut the smoked pork into bite-sized pieces.</li>
+                                <li>Boil the pork in water for about 20 minutes to reduce the fat content.</li>
+                                <li>Drain the water and set the pork aside.</li>
+                                <li>In a pan, add the pork, bamboo shoots, tomatoes, green chilies, and ginger-garlic paste.</li>
+                                <li>Cook on medium heat, adding water as needed, until the pork becomes tender.</li>
+                                <li>Adjust the salt and cook until the bamboo shoots are soft.</li>
+                                <li>Serve hot with steamed rice.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/QwUtLo5Ogo8?si=FFjM_fv6noQaTAOc">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2: Galho -->
+            <div class="recipe-section">
+                <h3>Galho (Naga Porridge)</h3>
+                <img src="images/galho.jpg" alt="Galho">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Galho Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup rice</li>
+                                <li>100g smoked meat (optional)</li>
+                                <li>1 cup mixed vegetables (potatoes, beans, etc.)</li>
+                                <li>1 tsp ginger, minced</li>
+                                <li>2 garlic cloves, minced</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Wash the rice and soak it for 10 minutes.</li>
+                                <li>In a pot, add rice, smoked meat, and enough water to cook the rice.</li>
+                                <li>Add minced ginger, garlic, and salt to taste.</li>
+                                <li>Bring it to a boil, then reduce heat and let it simmer.</li>
+                                <li>Add mixed vegetables and cook until the rice is soft and porridge-like.</li>
+                                <li>Serve hot, garnished with fresh herbs if desired.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/9F7QYFkT1nE?si=bYOB7OqbPWoNowM2">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 3: Axone with Pork -->
+            <div class="recipe-section">
+                <h3>Axone (Fermented Soybean) with Pork</h3>
+                <img src="images/axone-pork.jpg" alt="Axone with Pork">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Axone with Pork Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500g pork, cut into pieces</li>
+                                <li>3 tbsp Axone (fermented soybean)</li>
+                                <li>2-3 dried red chilies</li>
+                                <li>1 tsp ginger-garlic paste</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>In a pot, add the pork pieces and enough water to cover them.</li>
+                                <li>Bring to a boil and cook until the pork is tender.</li>
+                                <li>Drain the water and set aside the pork.</li>
+                                <li>In a pan, dry roast the dried red chilies and Axone.</li>
+                                <li>Grind the roasted chilies and Axone to make a coarse paste.</li>
+                                <li>Add the paste to the pork, along with ginger-garlic paste, and cook for about 10 minutes.</li>
+                                <li>Add salt to taste and cook until everything is well combined.</li>
+                                <li>Serve hot with rice.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/IULCZth7gM0?si=7typdh00CJv9o2wZ">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <div class="popup-overlay">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <iframe src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        const popupOverlay = document.querySelector('.popup-overlay');
+        const popupContent = document.querySelector('.popup-content iframe');
+        const closePopup = document.querySelector('.close-popup');
+        const openPopupButtons = document.querySelectorAll('.open-popup');
+
+        openPopupButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const videoSrc = button.getAttribute('data-video');
+                popupContent.src = videoSrc;
+                popupOverlay.style.display = 'flex';
+            });
+        });
+
+        closePopup.addEventListener('click', () => {
+            popupOverlay.style.display = 'none';
+            popupContent.src = '';
+        });
+    </script>
+</body>
+</html>

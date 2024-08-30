@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Karnataka</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #FF5733;
+        }
+
+        h2 {
+            color: #FF5733;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Styles for the popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Karnataka</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Bisi Bele Bath</h3>
+                <img src="images/Bisi Bele Bath.jpg" alt="Bisi Bele Bath">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Bisi Bele Bath Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup rice</li>
+                                <li>1/2 cup toor dal (split pigeon peas)</li>
+                                <li>1/2 cup mixed vegetables (carrot, beans, peas)</li>
+                                <li>1/4 cup tamarind pulp</li>
+                                <li>2 tablespoons Bisi Bele Bath powder</li>
+                                <li>1/2 teaspoon mustard seeds</li>
+                                <li>Curry leaves</li>
+                                <li>2 tablespoons ghee</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Cook rice and toor dal separately until soft.</li>
+                                <li>Heat ghee in a pan, add mustard seeds and curry leaves. Sauté for a few seconds.</li>
+                                <li>Add mixed vegetables and sauté until slightly tender.</li>
+                                <li>Add tamarind pulp, Bisi Bele Bath powder, and salt. Cook for 5 minutes.</li>
+                                <li>Mix in cooked rice and dal. Simmer for 10 minutes.</li>
+                                <li>Serve hot, garnished with coriander leaves and a dollop of ghee.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/C0nAdyXDlnk?si=7T-NzpQfuMNr7-k3">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Mysore Pak</h3>
+                <img src="images/masore-pak.jpg" alt="Mysore Pak">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Mysore Pak Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup gram flour (besan)</li>
+                                <li>2 cups sugar</li>
+                                <li>1 cup ghee</li>
+                                <li>1 cup water</li>
+                                <li>A pinch of cardamom powder</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Roast gram flour in ghee until golden brown. Set aside.</li>
+                                <li>In a pan, boil sugar and water until a thick syrup forms.</li>
+                                <li>Gradually add roasted gram flour to the syrup, stirring continuously.</li>
+                                <li>Keep adding ghee while stirring until the mixture thickens and leaves the sides of the pan.</li>
+                                <li>Pour the mixture into a greased tray, spread evenly, and allow it to set.</li>
+                                <li>Cut into squares and serve once cooled.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/yl4Pk0KB9JA?si=VcWo6wqGcn-uiFGb">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="recipe-section">
+                <h3>Neer Dosa</h3>
+                <img src="images/delicious-indian-dosa-composition.jpg" alt="Neer Dosa">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Neer Dosa Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup rice</li>
+                                <li>Salt to taste</li>
+                                <li>Water as needed</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Soak rice in water for 4-5 hours. Drain and grind to a fine batter with water.</li>
+                                <li>Add salt and additional water to achieve a thin, watery consistency.</li>
+                                <li>Heat a non-stick pan and pour a ladleful of batter, spreading evenly.</li>
+                                <li>Cover and cook for a minute without flipping.</li>
+                                <li>Remove dosa from the pan and repeat with remaining batter.</li>
+                                <li>Serve hot with coconut chutney or sambar.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/gcZdtWHi-fU?si=OkBSUUhhbCT4M8lq">Watch Recipe Video</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup for video -->
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.open-popup').forEach(button => {
+            button.addEventListener('click', function() {
+                const videoUrl = this.getAttribute('data-video');
+                document.querySelector('.popup-overlay').style.display = 'flex';
+                document.querySelector('.popup-overlay iframe').src = videoUrl;
+            });
+        });
+
+        document.querySelector('.close-popup').addEventListener('click', function() {
+            document.querySelector('.popup-overlay').style.display = 'none';
+            document.querySelector('.popup-overlay iframe').src = '';
+        });
+
+        document.querySelector('.popup-overlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+                document.querySelector('.popup-overlay iframe').src = '';
+            }
+        });
+    </script>
+</body>
+</html>

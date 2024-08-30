@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Famous Foods of Andhra Pradesh</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    #state-content {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section-content img {
+      width: 100%;
+      height: 250px; /* Increased height for less cropping */
+      object-fit: cover; /* Keeps the aspect ratio and crops sides as necessary */
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #4CAF50;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h3, h4 {
+      color: #555;
+    }
+
+    ul {
+      list-style-type: square;
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    ol {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    .recipe-section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .recipe-title {
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .recipe-content {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .recipe-content a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .recipe-content a:hover {
+      text-decoration: underline;
+    }
+
+    .recipe-content ul, .recipe-content ol {
+      margin-bottom: 10px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Styles for the popup */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none; /* Hidden by default */
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .popup-content {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .popup-content iframe {
+      width: 100%;
+      height: 400px;
+    }
+
+    .close-popup {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    /* Styles for the language toggle buttons */
+    .language-toggle {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .language-toggle button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .language-toggle button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-container">
+      <h1 class="nav-logo">Famous Foods of India</h1>
+      <ul class="nav-links">
+        <li><a href="../index.html#intro">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#states">Explore States</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="state-content">
+    <div class="section-content">
+      <h2>Famous Foods of Andhra Pradesh</h2>
+      
+      <!-- Pulihora Recipe -->
+      <div class="recipe-section">
+        <h3>Pulihora</h3>
+        <img src="images/phulraa.jpg" alt="Pulihora">
+        <div class="recipe-content">
+          <h4 class="recipe-title">Pulihora Recipe (English):</h4>
+          <ul>
+            <li><strong>Ingredients:</strong>
+              <ul>
+                <li>2 cups cooked rice</li>
+                <li>1/4 cup tamarind pulp</li>
+                <li>1/2 teaspoon turmeric powder</li>
+                <li>1 teaspoon red chili powder (adjust to taste)</li>
+                <li>1/2 teaspoon mustard seeds</li>
+                <li>1/4 cup peanuts, roasted and crushed</li>
+                <li>1 tablespoon chopped curry leaves</li>
+                <li>Salt to taste</li>
+                <li>Ghee or vegetable oil</li>
+              </ul>
+            </li>
+            <li><strong>Instructions:</strong>
+              <ol>
+                <li>Heat ghee or oil in a pan. Add mustard seeds and let them splutter.</li>
+                <li>Add curry leaves and sauté for a few seconds.</li>
+                <li>Add turmeric powder and red chili powder, and fry for a few seconds.</li>
+                <li>Add tamarind pulp and salt to taste. Simmer until the tamarind pulp thickens slightly.</li>
+                <li>Add cooked rice and mix well. Cook for a few minutes until the flavors are well combined.</li>
+                <li>Garnish with roasted peanuts and serve hot.</li>
+              </ol>
+            </li>
+          </ul>
+          <!-- Trigger for the popup video -->
+          <button class="open-popup" data-video="https://www.youtube.com/embed/_s_zhqsbZxg">Watch Recipe Video</button>
+        </div>
+      </div>
+
+      <!-- Biryani Recipe -->
+      <div class="recipe-section">
+        <h3>Andhra Biryani</h3>
+        <img src="images/biryani.jpg" alt="Andhra Biryani">
+        <div class="recipe-content">
+          <h4 class="recipe-title">Andhra Biryani Recipe (English):</h4>
+          <ul>
+            <li><strong>Ingredients:</strong>
+              <ul>
+                <li>2 cups basmati rice</li>
+                <li>500g chicken, cut into pieces</li>
+                <li>1 cup yogurt</li>
+                <li>2 large onions, thinly sliced</li>
+                <li>2 tomatoes, chopped</li>
+                <li>2 tablespoons biryani masala</li>
+                <li>1 teaspoon turmeric powder</li>
+                <li>1 teaspoon red chili powder</li>
+                <li>1/4 cup chopped coriander leaves</li>
+                <li>1/4 cup chopped mint leaves</li>
+                <li>Salt to taste</li>
+                <li>Ghee or vegetable oil</li>
+              </ul>
+            </li>
+            <li><strong>Instructions:</strong>
+              <ol>
+                <li>Marinate chicken with yogurt, turmeric powder, red chili powder, and biryani masala. Set aside for at least 30 minutes.</li>
+                <li>Heat ghee or oil in a large pot. Fry onions until golden brown.</li>
+                <li>Add marinated chicken and cook until it starts to brown.</li>
+                <li>Add tomatoes and cook until they soften.</li>
+                <li>Layer the partially cooked rice over the chicken. Sprinkle with coriander and mint leaves.</li>
+                <li>Cover and cook on low heat for 20-30 minutes until the rice and chicken are fully cooked.</li>
+                <li>Serve hot with raita or a side salad.</li>
+              </ol>
+            </li>
+          </ul>
+          <!-- Trigger for the popup video -->
+          <button class="open-popup" data-video="https://www.youtube.com/embed/aleED1mc5kI?si=3dnfOtDXmUsx3VGP">Watch Recipe Video</button>
+        </div>
+      </div>
+
+      <!-- Bobbatlu Recipe -->
+      <div class="recipe-section">
+        <h3>Bobbatlu</h3>
+        <img src="images/bobbatlu.jpg" alt="Bobbatlu">
+        <div class="recipe-content">
+          <h4 class="recipe-title">Bobbatlu Recipe (English):</h4>
+          <ul>
+            <li><strong>Ingredients:</strong>
+              <ul>
+                <li>1 cup chana dal (split chickpeas)</li>
+                <li>1 cup jaggery, grated</li>
+                <li>1 teaspoon cardamom powder</li>
+                <li>2 cups all-purpose flour (maida)</li>
+                <li>Pinch of salt</li>
+                <li>Ghee for frying</li>
+              </ul>
+            </li>
+            <li><strong>Instructions:</strong>
+              <ol>
+                <li>Cook chana dal until soft and mash it well.</li>
+                <li>Add grated jaggery and cook on low heat until it melts and combines with the dal. Add cardamom powder and mix well. Let it cool.</li>
+                <li>Mix all-purpose flour with a pinch of salt and water to make a soft dough. Cover and let it rest for 30 minutes.</li>
+                <li>Divide the dough into small balls and flatten them. Place a spoonful of the dal-jaggery mixture in the center and fold the dough over it, sealing the edges.</li>
+                <li>Roll out each filled dough ball into a flat disc. Fry on a hot griddle with ghee until golden brown on both sides.</li>
+                <li>Serve hot or at room temperature.</li>
+              </ol>
+            </li>
+          </ul>
+          <!-- Trigger for the popup video -->
+          <button class="open-popup" data-video="https://www.youtube.com/watch?v=lMD01lCoMFs">Watch Recipe Video</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup overlay for video -->
+  <div class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <iframe src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Famous Foods of India</p>
+</footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var popupOverlay = document.querySelector('.popup-overlay');
+      var popupContent = document.querySelector('.popup-content iframe');
+      var closePopupButton = document.querySelector('.close-popup');
+
+      document.querySelectorAll('.open-popup').forEach(function(button) {
+        button.addEventListener('click', function() {
+          var videoUrl = button.getAttribute('data-video');
+          popupContent.setAttribute('src', videoUrl);
+          popupOverlay.style.display = 'flex';
+        });
+      });
+
+      closePopupButton.addEventListener('click', function() {
+        popupOverlay.style.display = 'none';
+        popupContent.setAttribute('src', '');
+      });
+
+      popupOverlay.addEventListener('click', function(e) {
+        if (e.target === popupOverlay) {
+          popupOverlay.style.display = 'none';
+          popupContent.setAttribute('src', '');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

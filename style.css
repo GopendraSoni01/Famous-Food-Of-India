@@ -1,0 +1,157 @@
+/* General Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar styling */
+#navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ffe082;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    max-height: 200px; /* Set a max-height for scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffccbc;
+    color: #d84315;
+}
+
+/* Show dropdown content on click */
+.dropdown.open .dropdown-content {
+    display: block;
+    overflow-y: auto;
+}
+
+/* Intro Section Styling */
+#intro {
+    background-image: url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    opacity: 0;
+    animation: fade-in 1.5s forwards ease-in-out;
+}
+
+.intro-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Section Styling */
+.section-content {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Animation Keyframes */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Goa</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #4CAF50;
+        }
+
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Styles for the popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Goa</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Goan Fish Curry</h3>
+                <img src="images/vecteezy_ai-generated-crispy-perfection-vanjaram-meen-fry-with_39036214.jpg" alt="Goan Fish Curry">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Goan Fish Curry Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500 grams fish fillets</li>
+                                <li>1 onion, chopped</li>
+                                <li>2 tomatoes, chopped</li>
+                                <li>1 tablespoon ginger-garlic paste</li>
+                                <li>1 tablespoon coconut oil</li>
+                                <li>1/2 cup grated coconut</li>
+                                <li>1 teaspoon turmeric powder</li>
+                                <li>1 teaspoon red chili powder</li>
+                                <li>1 teaspoon coriander powder</li>
+                                <li>1/2 teaspoon garam masala</li>
+                                <li>Salt to taste</li>
+                                <li>1 cup water</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan and sauté onions until golden brown.</li>
+                                <li>Add ginger-garlic paste and cook for a minute.</li>
+                                <li>Add tomatoes, turmeric powder, red chili powder, coriander powder, and salt. Cook until tomatoes are soft.</li>
+                                <li>Add grated coconut and water. Bring to a boil.</li>
+                                <li>Add fish fillets and simmer until fish is cooked through.</li>
+                                <li>Garnish with garam masala and serve hot with rice.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/NQR1KHYRuWM?si=v_OLZrpdunJdKoum">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Goan Prawn Balchao</h3>
+                <img src="images/goan-prawn-balchao.jpg" alt="Goan Prawn Balchao">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Goan Prawn Balchao Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500 grams prawns, peeled and deveined</li>
+                                <li>1 onion, finely chopped</li>
+                                <li>2 tablespoons Balchao masala (or a mix of red chili powder, turmeric powder, cumin powder)</li>
+                                <li>1/4 cup vinegar</li>
+                                <li>1/4 cup tomato puree</li>
+                                <li>1 tablespoon sugar</li>
+                                <li>2 tablespoons oil</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan and sauté onions until translucent.</li>
+                                <li>Add Balchao masala and cook for a minute.</li>
+                                <li>Add tomato puree, vinegar, and sugar. Cook until the sauce thickens.</li>
+                                <li>Add prawns and cook until they are cooked through and coated with the sauce.</li>
+                                <li>Serve hot with rice or bread.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/watch?v=-5zWDWe1jTg">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="recipe-section">
+                <h3>Beef Xacuti</h3>
+                <img src="images/beef-xacuti.jpeg" alt="Beef Xacuti">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Beef Xacuti Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500 grams beef, cut into pieces</li>
+                                <li>1 onion, chopped</li>
+                                <li>2 tomatoes, chopped</li>
+                                <li>1 tablespoon ginger-garlic paste</li>
+                                <li>1/2 cup grated coconut</li>
+                                <li>1 tablespoon Xacuti masala (or a mix of coriander, cumin, and black pepper)</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1 teaspoon red chili powder</li>
+                                <li>1 cup water</li>
+                                <li>2 tablespoons oil</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan and sauté onions until golden brown.</li>
+                                <li>Add ginger-garlic paste and cook for a minute.</li>
+                                <li>Add tomatoes, turmeric powder, red chili powder, and Xacuti masala. Cook until tomatoes are soft.</li>
+                                <li>Add beef pieces and cook until browned.</li>
+                                <li>Add water and simmer until beef is tender and cooked through.</li>
+                                <li>Serve hot with rice or bread.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/fqYbwQLI3l8?si=7zCl1r0DGE01dejO">Watch Recipe Video</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Popup overlay for video -->
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <iframe src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Famous Foods of India</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const popupOverlay = document.querySelector('.popup-overlay');
+            const popupIframe = popupOverlay.querySelector('iframe');
+            const closePopupButton = document.querySelector('.close-popup');
+            const openPopupButtons = document.querySelectorAll('.open-popup');
+
+            function closePopup() {
+                popupOverlay.style.display = 'none';
+                popupIframe.src = ''; // Stop video playback
+            }
+
+            openPopupButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const videoUrl = this.dataset.video;
+                    popupIframe.src = videoUrl;
+                    popupOverlay.style.display = 'flex';
+                });
+            });
+
+            closePopupButton.addEventListener('click', closePopup);
+
+            popupOverlay.addEventListener('click', function (e) {
+                if (e.target === this) {
+                    closePopup();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

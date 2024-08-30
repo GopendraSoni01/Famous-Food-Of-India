@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Uttar Pradesh</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #FF5722;
+        }
+
+        h2 {
+            color: #FF5722;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Uttar Pradesh</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Tunday Kababi</h3>
+                <img src="images/tunday-kababi.jpg" alt="Tunday Kababi">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Tunday Kababi Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500g minced meat (buffalo or lamb)</li>
+                                <li>1 onion, finely chopped</li>
+                                <li>2 tablespoons ginger-garlic paste</li>
+                                <li>1 teaspoon red chili powder</li>
+                                <li>1 teaspoon cumin powder</li>
+                                <li>1 teaspoon coriander powder</li>
+                                <li>1/2 teaspoon garam masala</li>
+                                <li>1 tablespoon chana dal (split chickpeas), soaked</li>
+                                <li>1/4 cup chopped coriander leaves</li>
+                                <li>Salt to taste</li>
+                                <li>Oil for frying</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Mix minced meat with chana dal, ginger-garlic paste, onion, and spices.</li>
+                                <li>Grind the mixture to a smooth paste. Adjust salt and spices to taste.</li>
+                                <li>Shape the mixture into small patties or skewers.</li>
+                                <li>Heat oil in a pan and fry the kababs until golden brown and cooked through.</li>
+                                <li>Serve hot with green chutney and onions.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/9cAbwKa6frg?si=DGcesPRiwVPxX7_1">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Aloo Paratha</h3>
+                <img src="images/aloo-paratha.jpg" alt="Aloo Paratha">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Aloo Paratha Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>2 cups whole wheat flour</li>
+                                <li>2 medium potatoes, boiled and mashed</li>
+                                <li>1 onion, finely chopped</li>
+                                <li>2 green chilies, chopped</li>
+                                <li>1 teaspoon cumin seeds</li>
+                                <li>1 teaspoon coriander powder</li>
+                                <li>1/2 teaspoon garam masala</li>
+                                <li>1 tablespoon chopped coriander leaves</li>
+                                <li>Salt to taste</li>
+                                <li>Oil or ghee for cooking</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Mix whole wheat flour with water to form a dough. Let it rest for 20 minutes.</li>
+                                <li>Combine mashed potatoes with onions, green chilies, cumin seeds, coriander powder, garam masala, coriander leaves, and salt.</li>
+                                <li>Divide the dough into balls and roll each into a small circle. Place a portion of the potato filling in the center.</li>
+                                <li>Seal the dough around the filling and roll out into a paratha.</li>
+                                <li>Heat a tava or griddle and cook the paratha with oil or ghee until golden brown on both sides.</li>
+                                <li>Serve hot with yogurt or pickle.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/r2N8ObqAgy0?si=JJKTkey2HgbtJ4UA">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="recipe-section">
+                <h3>Rogan Josh</h3>
+                <img src="images/rogan-josh.jpg" alt="Rogan Josh">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Rogan Josh Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500g lamb, cut into pieces</li>
+                                <li>2 onions, finely chopped</li>
+                                <li>1 cup yogurt</li>
+                                <li>2 tablespoons ginger-garlic paste</li>
+                                <li>2 teaspoons red chili powder</li>
+                                <li>1 teaspoon turmeric powder</li>
+                                <li>1 teaspoon garam masala</li>
+                                <li>1/2 teaspoon saffron (optional)</li>
+                                <li>1/4 cup oil</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan, add onions, and sauté until golden brown.</li>
+                                <li>Add ginger-garlic paste and cook for a few minutes.</li>
+                                <li>Add lamb pieces and brown them on all sides.</li>
+                                <li>Add red chili powder, turmeric powder, and salt. Mix well.</li>
+                                <li>Add yogurt and cook on low heat until the lamb is tender and the gravy is thick.</li>
+                                <li>Stir in garam masala and saffron (if using). Cook for a few more minutes.</li>
+                                <li>Serve hot with rice or naan.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/g_hvkyYPAMQ?si=1EKNYX2OGD2DvIJA">Watch Recipe Video</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup" id="close-popup">&times;</span>
+            <div class="video-wrapper">
+                <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+        </footer>
+
+    <script>
+        document.querySelectorAll('.open-popup').forEach(button => {
+            button.addEventListener('click', function() {
+                const videoSrc = this.getAttribute('data-video');
+                document.getElementById('video-frame').src = videoSrc;
+                document.getElementById('popup-overlay').style.display = 'flex';
+            });
+        });
+
+        document.getElementById('close-popup').addEventListener('click', function() {
+            document.getElementById('popup-overlay').style.display = 'none';
+            document.getElementById('video-frame').src = '';
+        });
+
+        document.getElementById('popup-overlay').addEventListener('click', function(event) {
+            if (event.target === this) {
+                document.getElementById('popup-overlay').style.display = 'none';
+                document.getElementById('video-frame').src = '';
+            }
+        });
+    </script>
+</body>
+</html>

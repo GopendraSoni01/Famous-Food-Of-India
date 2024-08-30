@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Tripura</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #E91E63;
+        }
+
+        h2 {
+            color: #E91E63;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Tripura</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Mui Borok</h3>
+                <img src="images/mui-borok.jpg" alt="Mui Borok">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Mui Borok Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup rice</li>
+                                <li>1/2 cup split urad dal (black gram)</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1 tablespoon ginger-garlic paste</li>
+                                <li>2 green chilies, chopped</li>
+                                <li>1 onion, chopped</li>
+                                <li>1 tablespoon oil</li>
+                                <li>Salt to taste</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Wash and soak rice and urad dal for a few hours.</li>
+                                <li>Drain and grind them together with turmeric powder to form a smooth batter.</li>
+                                <li>Heat oil in a pan, add onions, ginger-garlic paste, and green chilies. Sauté until onions are golden.</li>
+                                <li>Add the batter to the pan and cook until it thickens and the oil separates.</li>
+                                <li>Season with salt and serve hot with rice or as a side dish.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/8vviwXDRbf8?si=0bqAdzyWoQqenRuo">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Bamboo Shoot Curry</h3>
+                <img src="images/bamboo-shoot-curry.jpg" alt="Bamboo Shoot Curry">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Bamboo Shoot Curry Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>1 cup bamboo shoots, sliced</li>
+                                <li>1 onion, chopped</li>
+                                <li>2 tomatoes, chopped</li>
+                                <li>1 tablespoon ginger-garlic paste</li>
+                                <li>1 tablespoon curry powder</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1 tablespoon oil</li>
+                                <li>Salt to taste</li>
+                                <li>Chopped coriander for garnish</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan and sauté onions until translucent.</li>
+                                <li>Add ginger-garlic paste and cook until fragrant.</li>
+                                <li>Add tomatoes and cook until they break down.</li>
+                                <li>Add curry powder, turmeric powder, and salt. Cook for a minute.</li>
+                                <li>Add bamboo shoots and mix well. Cook until tender.</li>
+                                <li>Garnish with chopped coriander and serve with rice or roti.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/U-EedgHSbxA?si=JNGgd6UMXZDUTmr3">Watch Recipe Video</button>
+                </div>
+            </div>
+            <div class="recipe-section">
+                <h3>Pork with Bamboo Shoot</h3>
+                <img src="images/pork_bamboo_shoot.jpg" alt="Pork with Bamboo Shoot">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Pork with Bamboo Shoot Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>500g pork, thinly sliced</li>
+                                <li>200g bamboo shoots, sliced</li>
+                                <li>2 tablespoons soy sauce</li>
+                                <li>1 tablespoon oyster sauce</li>
+                                <li>2 tablespoons vegetable oil</li>
+                                <li>3 cloves garlic, minced</li>
+                                <li>1 inch ginger, minced</li>
+                                <li>1 bell pepper, sliced</li>
+                                <li>Salt and pepper to taste</li>
+                                <li>Fresh coriander for garnish</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Heat oil in a pan and sauté minced garlic and ginger until fragrant.</li>
+                                <li>Add the pork slices and cook until browned.</li>
+                                <li>Add bamboo shoots and bell pepper, stir-frying for a few minutes.</li>
+                                <li>Pour in soy sauce and oyster sauce, mixing well. Cook until everything is heated through.</li>
+                                <li>Season with salt and pepper to taste. Garnish with fresh coriander before serving.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/DTZAH7lKJmI?si=5_XveZApPVMh79c5">Watch Recipe Video</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="popup-overlay">
+            <div class="popup-content">
+                <span class="close-popup">&times;</span>
+                <div class="video-wrapper">
+                    <iframe src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+            </footer>
+    
+        <script>
+            document.querySelectorAll('.open-popup').forEach(button => {
+                button.addEventListener('click', () => {
+                    const videoUrl = button.getAttribute('data-video');
+                    document.querySelector('.popup-overlay iframe').src = videoUrl;
+                    document.querySelector('.popup-overlay').style.display = 'flex';
+                });
+            });
+    
+            document.querySelector('.close-popup').addEventListener('click', () => {
+                document.querySelector('.popup-overlay').style.display = 'none';
+                document.querySelector('.popup-overlay iframe').src = '';
+            });
+    
+            window.addEventListener('click', (e) => {
+                if (e.target === document.querySelector('.popup-overlay')) {
+                    document.querySelector('.popup-overlay').style.display = 'none';
+                    document.querySelector('.popup-overlay iframe').src = '';
+                }
+            });
+        </script>
+    </body>
+    </html>
+      

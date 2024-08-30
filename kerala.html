@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Foods of Kerala</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #state-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-content img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #FF5733;
+        }
+
+        h2 {
+            color: #FF5733;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3, h4 {
+            color: #555;
+        }
+
+        .recipe-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .recipe-content ul, .recipe-content ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .recipe-content li {
+            margin-bottom: 10px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Styles for the popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Famous Foods of India</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html#intro">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#states">Explore States</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="state-content">
+        <div class="section-content">
+            <h2>Famous Foods of Kerala</h2>
+
+            <!-- Dish 1 -->
+            <div class="recipe-section">
+                <h3>Puttu and Kadala Curry</h3>
+                <img src="images/pexels-saveurssecretes-17104944.jpg" alt="Puttu and Kadala Curry">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Puttu and Kadala Curry Recipe:</h4>
+                    <ul>
+                        <li><strong>Puttu Ingredients:</strong>
+                            <ul>
+                                <li>2 cups rice flour</li>
+                                <li>1 cup grated coconut</li>
+                                <li>1/2 teaspoon salt</li>
+                                <li>Water as needed</li>
+                            </ul>
+                        </li>
+                        <li><strong>Kadala Curry Ingredients:</strong>
+                            <ul>
+                                <li>1 cup black chickpeas (kadala)</li>
+                                <li>1 onion, finely chopped</li>
+                                <li>2 tomatoes, chopped</li>
+                                <li>1 tablespoon ginger-garlic paste</li>
+                                <li>1 teaspoon turmeric powder</li>
+                                <li>1 teaspoon chili powder</li>
+                                <li>1 teaspoon coriander powder</li>
+                                <li>2 tablespoons coconut, grated</li>
+                                <li>Salt to taste</li>
+                                <li>Oil for cooking</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>For Puttu: Mix rice flour with salt and enough water to form a crumbly mixture. Layer the mixture and grated coconut in a puttu maker. Steam for 10 minutes.</li>
+                                <li>For Kadala Curry: Soak black chickpeas overnight and cook until tender. Heat oil, add onions, and sauté until golden. Add ginger-garlic paste and tomatoes, and cook until tomatoes are soft.</li>
+                                <li>Add spices and cooked chickpeas, simmer for 10 minutes. Grind grated coconut and add to the curry. Cook for an additional 5 minutes.</li>
+                                <li>Serve hot with Puttu.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/Rr72jCYwMdc?si=ezjYRBHUBKx7K7kx">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="recipe-section">
+                <h3>Appam with Stew</h3>
+                <img src="images/pexels-amar-17593640.jpg" alt="Appam with Stew">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Appam with Stew Recipe:</h4>
+                    <ul>
+                        <li><strong>Appam Ingredients:</strong>
+                            <ul>
+                                <li>1 cup rice</li>
+                                <li>1/4 cup grated coconut</li>
+                                <li>1/4 cup urad dal (split black gram)</li>
+                                <li>1/2 teaspoon yeast</li>
+                                <li>1/2 teaspoon sugar</li>
+                                <li>Salt to taste</li>
+                                <li>Water as needed</li>
+                            </ul>
+                        </li>
+                        <li><strong>Stew Ingredients:</strong>
+                            <ul>
+                                <li>1 cup mixed vegetables (carrot, potato, beans)</li>
+                                <li>1 onion, chopped</li>
+                                <li>1 green chili, slit</li>
+                                <li>1/2 cup coconut milk</li>
+                                <li>1 teaspoon ginger-garlic paste</li>
+                                <li>1/2 teaspoon turmeric powder</li>
+                                <li>1/2 teaspoon black pepper powder</li>
+                                <li>Salt to taste</li>
+                                <li>Oil for cooking</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>For Appam: Soak rice and urad dal overnight. Grind with grated coconut, yeast, and sugar into a smooth batter. Let it ferment for 8 hours.</li>
+                                <li>Heat a non-stick appam pan and pour a ladle of batter. Swirl to cover the pan. Cook until the edges are crispy and the center is soft.</li>
+                                <li>For Stew: Heat oil, add onions, and sauté until soft. Add ginger-garlic paste, vegetables, and spices. Add coconut milk and cook until vegetables are tender.</li>
+                                <li>Serve Appam with hot stew.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/V40jJdhPp2I?si=5omDIkVj4hG9RG1U">Watch Recipe Video</button>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="recipe-section">
+                <h3>Kerala Sadya</h3>
+                <img src="images/Untitled design.jpg" alt="Kerala Sadya">
+                <div class="recipe-content">
+                    <h4 class="recipe-title">Kerala Sadya Recipe:</h4>
+                    <ul>
+                        <li><strong>Ingredients:</strong>
+                            <ul>
+                                <li>Rice</li>
+                                <li>Parippu (yellow dal)</li>
+                                <li>Avial (mixed vegetable curry)</li>
+                                <li>Thoran (vegetable stir-fry)</li>
+                                <li>Olan (pumpkin and black-eyed pea curry)</li>
+                                <li>Pickle</li>
+                                <li>Curd</li>
+                                <li>Chips</li>
+                                <li>Banana</li>
+                                <li>Papadam</li>
+                            </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                            <ol>
+                                <li>Prepare each dish separately as per traditional recipes.</li>
+                                <li>Serve rice with a variety of curries and side dishes on a banana leaf.</li>
+                                <li>Enjoy the meal as a complete Sadya with all accompaniments.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <button class="open-popup" data-video="https://www.youtube.com/embed/0l-XvQ89vYk?si=DLVdK3d8etBGD8Bl">Watch Recipe Video</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Famous Foods of India. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.open-popup').forEach(button => {
+            button.addEventListener('click', function() {
+                const videoUrl = this.getAttribute('data-video');
+                document.querySelector('.popup-overlay').style.display = 'flex';
+                document.querySelector('.popup-overlay iframe').src = videoUrl;
+            });
+        });
+
+        document.querySelector('.close-popup').addEventListener('click', function() {
+            document.querySelector('.popup-overlay').style.display = 'none';
+            document.querySelector('.popup-overlay iframe').src = '';
+        });
+
+        document.querySelector('.popup-overlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+                document.querySelector('.popup-overlay iframe').src = '';
+            }
+        });
+    </script>
+</body>
+</html>
